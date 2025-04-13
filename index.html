@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="lt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Butų remontas Vilniuje: meistras į namus, baldų gamyba, vidaus apdaila. Dirbame ir savaitgaliais!">
+    <meta name="keywords" content="remontas, Vilnius, baldų gamyba, meistras, Meistras į namus, vidaus apdaila">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Jura:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./main.css">
+    <title>Meistras i namus</title>
+</head>
+<body>
+    <nav>
+        <a href="/" aria-label="Pagrindinis puslapis">
+        <img class="logo-nav" src="./assets/svg/general logo 1.svg" alt="buturemontas.lt logo"/>
+        </a>
+
+        <input type="checkbox" id="menu-toggle" aria-label="Toggle navigation menu" />
+        <label class="menu-icon" for="menu-toggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+
+        <ul class="ul-nav">
+            <li><a href="#apie-mus">Apie mus</a></li>
+            <li><a href="#paslaugos">Paslaugos</a></li>
+            <li><a href="#kontaktai">Kontaktai</a></li>
+        </ul>
+    </nav>
+
+    <section id="hero">
+        <div class="hero-text">
+        <h1>Greitas ir kokybiškas remontas jūsų namams</h1>
+            <div class="attention-box">
+                <img class="attention" src="./assets/svg/⚠️.png" alt="attention-signal-emoji"/>
+                <p> Dirbame ir savaitgaliais</p>
+            </div>
+        </div>
+       
+        <img class="hero-house" src="./assets/svg/HOUSE.svg" alt="house-lines"/>
+ 
+        <form class="hero-form" action="send.php" method="POST">
+            <input type="text" id="name" name="name" placeholder="Vardenis" required>
+            <input type="tel" id="phone" name="phone" placeholder="+37061234567" pattern="^\+3706\d{7}$" required>
+            <select id="paslauga" name="paslauga" required>
+                <option value="" disabled selected hidden>Pasirinkite paslaugą</option>
+                <option value="Meistras">Meistras į namus</option>
+                <option value="Baldai">Baldų gamyba</option>
+                <option value="Apdaila">Vidaus Apdaila</option>
+            </select>
+            <button type="submit" aria-label="Užsisakyti paslaugą">UŽSISAKYTI</button>
+        </form>
+    </section>
+
+    <section id="apie-mus">
+            <div class="apie-bg">
+            <h2 class="apie-mus">Kas mes tokie?</h2>
+            <img class="first-img" src="./assets/img/apie-kitchen-photo.png" alt="Virtuvės interjeras"/>
+            <div class="apie-mus-bg">
+            <p class="p-apie-mus">Esame „buturemontas.lt“ – Vilniuje įsikūrusi butų remonto įmonė, kuri užsiima visais apdailos darbais, iškvietimais meistro į namus, baldų gamyba.
+            </p>
+            </div>
+            </div>
+            <div class="second-images">
+                <img class="second-first" src="./assets/img/second-first.jpg" alt="spinta" />
+                <img class="second-second" src="./assets/img/second-second.jpg" alt="remontas" />
+                <img class="second-third" src="./assets/img/second-third.jpg" alt="meistras taiso rozete" />
+            </div>
+    </section>
+    
+    <section id="paslaugos">
+            <h2>Mūsų paslaugos</h2>
+            <!-- tabs-->
+            <div class="tab">
+                <button class="tab-link" type="button" onclick="openTab('baldai')" aria-controls="baldai">Baldų gamyba</button>
+                <button class="tab-link" type="button" onclick="openTab('meistras')" aria-controls="meistras">Meistras į namus</button>
+                <button class="tab-link" type="button" onclick="openTab('apdaila')" aria-controls="apdaila">Vidaus apdaila</button>
+            </div>
+            <!-- tab content-->
+             <div id="baldai" class="tab-content">
+                <h3>Baldų gamyba</h3>
+                <p>Projektuojame, gaminame, surenkame ir montuojame visus kietuosius baldus:</p>
+                <ul>
+                    <li>Virtuvės</li>
+                    <li>Spintas</li>
+                    <li>Lentynos</li>
+                    <li>Rūbinės</li>
+                    <li>Voniai</li>
+                    <li>Prieškambariui</li>
+                    <li>Vaikų kambariui</li>
+                    <li>Nestandartinius</li>
+                    <li>Prekybos</li>
+                    <li>Biuro</li>
+                </ul>
+                <p><img class="attention-mini" src="./assets/svg/⚠️.svg" alt="" aria-hidden="true"> Galime padaryti nestandartinius variantus.</p>
+                <div class="pricelist">
+                    <p>Kaina nuo</p>
+                    <p class="price">200€</p>
+                    <button type="submit">Užsisakyti paslaugą</button>
+                </div>
+            </div>
+            <div id="meistras" class="tab-content">
+                <h3>Meistras į namus</h3>
+                <p>Greitai ir kokybiškai padėsime jums suremontuoti arba pakeisti sulaužytą detalę, bei pakluoti grindis ir plyteles</p>
+                <div class="pricelist">
+                    <p>Kaina nuo</p>
+                    <p class="price">200€</p>
+                <button type="submit">Užsisakyti paslaugą</button>
+                </div>
+            </div>
+            <div id="apdaila" class="tab-content">
+                    <h3>Vidaus apdaila</h3>
+                    <p>Tekstas apie paslauga</p>
+                    <ul>
+                        <li>Deja, ši paslauga dar nėra aprašyta</li>
+                        <li>Deja, ši paslauga dar nėra aprašyta</li>
+                        <li>Deja, ši paslauga dar nėra aprašyta</li>
+                        <li>Deja, ši paslauga dar nėra aprašyta</li>
+                        <li>Deja, ši paslauga dar nėra aprašyta</li>
+                    </ul>
+                    <p><img class="attention-mini" src="./assets/svg/⚠️.svg" alt="" aria-hidden="true"> Galime padaryti nestandartinius variantus.</p>
+                    <div class="pricelist">
+                        <p>Kaina nuo</p>
+                        <p class="price">200€</p>
+                    <button type="submit">Užsisakyti paslaugą</button>
+                    </div>
+        </div>
+    </section>
+    <section id="kontaktai">
+        <h2 class="kontaktai">Reikia konsultacijos?</h2>
+        <p class="p-kontaktai">Parašykite mums arba paskambinkite</p>
+        <a class="tel" href="tel:+37069485888"><i class="fas fa-phone-alt"></i>+37069485888</a>
+        <a class="tel" href="tel:+37061088777"><i class="fas fa-phone-alt"></i>+37061088777</a>
+        <a class="tel" href="https://facebook.com/buturemontas24.lt"><i class="fab fa-facebook"></i>mūsų Facebook</a>
+        <a class="tel" href="https://www.instagram.com/buturemontas.lt/"><i class="fab fa-instagram"></i>mūsų Instagram</a>
+    </section>
+
+    <footer>
+        <p>adresas g.4-70 LT-02103, Lietuva</p>
+        <p>© UAB „buturemontas.lt“, 2025. All Rights Reserved.</p>
+    </footer>
+
+    <script>document.addEventListener('DOMContentLoaded', function() {
+    openTab('baldai'); // Open "Baldų gamyba" by default
+});
+
+function openTab(tabName) {
+    var i, tabContent, tabLinks;
+    // Hide all tab content
+    tabContent = document.getElementsByClassName("tab-content");
+    for (i = 0; i < tabContent.length; i++) {
+        tabContent[i].style.display = "none";
+    }
+
+    // Remove active class from all tabs
+    tabLinks = document.getElementsByClassName("tab-link");
+    for (i = 0; i < tabLinks.length; i++) {
+        tabLinks[i].classList.remove("active");
+    }
+
+    // Show the clicked tab content
+    document.getElementById(tabName).style.display = "block";
+    
+    // Add active class to the clicked tab
+    var clickedTab = document.querySelector(`button[onclick="openTab('${tabName}')"]`);
+    clickedTab.classList.add("active");
+}
+    </script>
+
+    <!--created by vkachovic(etzhmk)-->
+</body>
+</html>
