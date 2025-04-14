@@ -72,47 +72,52 @@
     </section>
     
     <section id="paslaugos">
-            <h2>Mūsų paslaugos</h2>
-            <!-- tabs-->
+        <h2>Mūsų paslaugos</h2>
+        <div class="tab-wrapper">
+            <!-- tabs -->
             <div class="tab">
                 <button class="tab-link" type="button" onclick="openTab('baldai')" aria-controls="baldai">Baldų gamyba</button>
                 <button class="tab-link" type="button" onclick="openTab('meistras')" aria-controls="meistras">Meistras į namus</button>
                 <button class="tab-link" type="button" onclick="openTab('apdaila')" aria-controls="apdaila">Vidaus apdaila</button>
             </div>
-            <!-- tab content-->
-             <div id="baldai" class="tab-content">
-                <h3>Baldų gamyba</h3>
-                <p>Projektuojame, gaminame, surenkame ir montuojame visus kietuosius baldus:</p>
-                <ul>
-                    <li>Virtuvės</li>
-                    <li>Spintas</li>
-                    <li>Lentynos</li>
-                    <li>Rūbinės</li>
-                    <li>Voniai</li>
-                    <li>Prieškambariui</li>
-                    <li>Vaikų kambariui</li>
-                    <li>Nestandartinius</li>
-                    <li>Prekybos</li>
-                    <li>Biuro</li>
-                </ul>
-                <p><img class="attention-mini" src="./assets/svg/⚠️.svg" alt="" aria-hidden="true"> Galime padaryti nestandartinius variantus.</p>
+            <!-- tab content -->
+            <div id="baldai" class="tab-content">
+                <div class="content-text">
+                    <p>Projektuojame, gaminame, surenkame ir montuojame visus kietuosius baldus:</p>
+                    <ul>
+                        <li>Virtuvės</li>
+                        <li>Spintas</li>
+                        <li>Lentynos</li>
+                        <li>Rūbinės</li>
+                        <li>Voniai</li>
+                        <li>Prieškambariui</li>
+                        <li>Vaikų kambariui</li>
+                        <li>Nestandartinius</li>
+                        <li>Prekybos</li>
+                        <li>Biuro</li>
+                    </ul>
+                    <p><img class="attention-mini" src="./assets/svg/⚠️.png" alt="" aria-hidden="true"> Galime padaryti nestandartinius variantus.</p>
+                </div>
                 <div class="pricelist">
                     <p>Kaina nuo</p>
                     <p class="price">200€</p>
                     <button type="submit">Užsisakyti paslaugą</button>
                 </div>
             </div>
+            
             <div id="meistras" class="tab-content">
-                <h3>Meistras į namus</h3>
-                <p>Greitai ir kokybiškai padėsime jums suremontuoti arba pakeisti sulaužytą detalę, bei pakluoti grindis ir plyteles</p>
+                <div class="content-text">
+                    <p>Greitai ir kokybiškai padėsime jums suremontuoti arba pakeisti sulaužytą detalę, bei pakluoti grindis ir plyteles.</p>
+                </div>
                 <div class="pricelist">
                     <p>Kaina nuo</p>
                     <p class="price">200€</p>
-                <button type="submit">Užsisakyti paslaugą</button>
+                    <button type="submit">Užsisakyti paslaugą</button>
                 </div>
             </div>
+    
             <div id="apdaila" class="tab-content">
-                    <h3>Vidaus apdaila</h3>
+                <div class="content-text">
                     <p>Tekstas apie paslauga</p>
                     <ul>
                         <li>Deja, ši paslauga dar nėra aprašyta</li>
@@ -121,12 +126,13 @@
                         <li>Deja, ši paslauga dar nėra aprašyta</li>
                         <li>Deja, ši paslauga dar nėra aprašyta</li>
                     </ul>
-                    <p><img class="attention-mini" src="./assets/svg/⚠️.svg" alt="" aria-hidden="true"> Galime padaryti nestandartinius variantus.</p>
-                    <div class="pricelist">
-                        <p>Kaina nuo</p>
-                        <p class="price">200€</p>
+                </div>
+                <div class="pricelist">
+                    <p>Kaina nuo</p>
+                    <p class="price">200€</p>
                     <button type="submit">Užsisakyti paslaugą</button>
-                    </div>
+                </div>
+            </div>
         </div>
     </section>
     <section id="kontaktai">
@@ -137,6 +143,8 @@
         <a class="tel" href="https://facebook.com/buturemontas24.lt"><i class="fab fa-facebook"></i>mūsų Facebook</a>
         <a class="tel" href="https://www.instagram.com/buturemontas.lt/"><i class="fab fa-instagram"></i>mūsų Instagram</a>
     </section>
+
+    <button id="scroll-to-top" class="scroll-to-top">↑</button>
 
     <footer>
         <p>adresas g.4-70 LT-02103, Lietuva</p>
@@ -169,6 +177,26 @@ function openTab(tabName) {
     clickedTab.classList.add("active");
 }
     </script>
+    <script>
+        const scrollToTopButton = document.getElementById("scroll-to-top");
+
+// Показываем кнопку, когда страница прокручена вниз
+window.onscroll = function () {
+    if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+        scrollToTopButton.style.display = "block"; // Показываем кнопку
+    } else {
+        scrollToTopButton.style.display = "none"; // Скрываем кнопку
+    }
+};
+
+// Добавляем плавную прокрутку к верхней части страницы
+scrollToTopButton.addEventListener("click", function () {
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+});
+        </script>
 
     <!--created by vkachovic(etzhmk)-->
 </body>
