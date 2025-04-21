@@ -197,6 +197,7 @@ h1 {
     left: 20px;
     top: 50%;
     font-size: 1rem;
+    font-family: var(--font-base);
     color: var(--grey); /* Цвет меток по умолчанию */
     transform: translateY(-50%);
     transition: all 0.2s ease;
@@ -525,6 +526,144 @@ footer p {
     background: var(--white); 
     border: 5px solid var(--blue);
     color: var(--blue);
+}
+
+
+
+/* MODAL */
+
+/* Модальное окно */
+.modal {
+    display: none; /* Скрыто по умолчанию */
+    position: fixed;
+    z-index: 100;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4); /* Полупрозрачный фон */
+    padding-top: 100px;
+    transition: opacity 0.3s ease;
+    opacity: 0;
+}
+
+.modal.show {
+    display: block;
+    opacity: 1;
+}
+
+/* Содержимое модального окна */
+.modal-content {
+    background-color: var(--white);
+    margin: auto;
+    padding: 40px 26px;
+    width: 100%;
+    max-width: 415px; /* Ограничиваем максимальную ширину */
+    height: auto;
+    max-height: 670px;
+    border-radius: 5px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.modal-content h2 {
+    color: var(--black);
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    width: 100%;
+    max-width: 320px;
+    margin: 60px 0;
+}
+
+.modal-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 40px;
+}
+
+.modal-form input,
+.modal-form select {
+    padding: 1.2rem 1.2rem 0.75rem;
+    font-size: 1rem;
+    border: 2px solid var(--black);
+    border-radius: 5px;
+    background-color: var(--white);
+    width: 100%;
+    box-sizing: border-box;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.modal-form #paslauga {
+    padding: 1rem;
+}
+
+/* Скрываем стандартные плейсхолдеры */
+.modal-form input::placeholder,
+.modal-form select::placeholder {
+    color: transparent;
+}
+
+.modal-form .form-item {
+    position: relative;
+}
+
+/* Стиль для меток, которые изначально находятся внутри поля */
+.modal-form label {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    font-size: 1rem;
+    font-family: var(--font-base);
+    color: var(--grey); /* Цвет меток по умолчанию */
+    transform: translateY(-50%);
+    transition: all 0.2s ease;
+    pointer-events: none; /* Метка не кликабельна */
+}
+
+/* Когда поле в фокусе или если оно не пустое, метка сдвигается вверх */
+.modal-form input:focus + label,
+.modal-form select:focus + label,
+.modal-form input:not(:placeholder-shown) + label,
+.modal-form select:not(:placeholder-shown) + label {
+    top: 15px; /* Меньший сдвиг вверх */
+    left: 20px;
+    font-size: 0.875rem;
+    color: var(--grey); /* Цвет метки при фокусе */
+}
+
+/* Стилизация кнопки */
+.modal-form button {
+    border: none;
+    height: 52px;
+    background: var(--btnbg);
+    color: var(--white);
+}
+
+.modal-form button:hover {
+    background: var(--btnbghover);
+}
+
+/* Кнопка закрытия */
+.close-btn {
+    color: var(--black);
+    font-size: 50px;
+    font-weight: bold;
+    position: absolute;
+    right: 40px;
+    top: 36px;
+}
+
+.close-btn:hover,
+.close-btn:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
 }
 
 /*--RESPONSIBLE--*/
