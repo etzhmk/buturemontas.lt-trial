@@ -910,11 +910,12 @@ footer p {
 
     nav {
         display: flex;
-        justify-content: space-between;
         flex-direction: row;
         width: 90%;
-        margin: 20px auto 0;
+        height: auto;
+        margin: 20px auto;
     }
+
 
     h1 {
         font-size: 40px;
@@ -950,6 +951,7 @@ footer p {
 
     .menu-icon {
         display: flex;
+        padding-top: 17px;
     }
 
     .ul-nav > li {
