@@ -75,7 +75,14 @@
         method="POST"
       >
         <div class="form-item">
-          <input type="text" id="name" name="name" required placeholder=" " />
+          <input
+            type="text"
+            id="name"
+            name="name"
+            required=""
+            placeholder=" "
+            style=""
+          />
           <label for="name">Vardenis</label>
         </div>
 
@@ -85,13 +92,13 @@
             id="phone"
             name="phone"
             pattern="^\+3706\d{7}$"
-            required
+            required=""
             placeholder=" "
           />
           <label for="phone">Telefono numeris</label>
         </div>
-        <select id="paslauga" name="paslauga" required>
-          <option value="" disabled selected hidden>
+        <select id="paslauga" name="paslauga" required="">
+          <option value="" disabled="" selected="" hidden="">
             Pasirinkite paslaugą
           </option>
           <option value="Meistras">Meistras į namus</option>
@@ -148,7 +155,7 @@
         <!-- tabs -->
         <div class="tab">
           <button
-            class="tab-link"
+            class="tab-link active"
             type="button"
             onclick="openTab('baldai')"
             aria-controls="baldai"
@@ -174,7 +181,7 @@
         </div>
       </div>
       <!-- tab content -->
-      <div class="tab-content" id="baldai">
+      <div class="tab-content" id="baldai" style="display: block">
         <div class="content-text">
           <p>
             Projektuojame, gaminame, surenkame ir montuojame visus kietuosius
@@ -203,87 +210,40 @@
           </p>
         </div>
         <div class="pricelist">
-          <!--<p>Kaina nuo</p>
-        <p class="price">200€</p>-->
+          <p>Kaina nuo</p>
+          <p class="price">200€</p>
           <button type="submit">Užsisakyti paslaugą</button>
         </div>
       </div>
 
-      <div class="tab-content" id="meistras">
+      <div class="tab-content" id="meistras" style="display: none">
         <div class="content-text">
-          <p>Meistras gali:</p>
-          <ul>
-            <li>Surinkti / suremontuoti bet kokius baldus</li>
-            <li>Pakeisti maišytuvą, sifoną, kriauklę ir net klozetą</li>
-            <li>Pakeisti spyną, šerdį, balkono rankeną ir kt</li>
-            <li>
-              Pakeisti lizdą, kištuką, laidą, pakabinti šviestuvą ir viskas, kas
-              susiję su buitine elektronika
-            </li>
-            <li>
-              Sumontuoti / pakeisti bet kokius buitinius prietaisus - skalbimo
-              mašiną, orkaitę, viryklę, gartraukį ir kt
-            </li>
-            <li>
-              Pakabinti užuolaidas, visų rūšių lentynas, paveikslus, spinteles
-              ir kt;
-            </li>
-            <li>
-              Pakloti laminuotas grindis, sumontuoti grindjuostes, suklijuoti
-              trūkstamas plyteles ir daug kitų smulkmenų
-            </li>
-            <li>
-              Nueiti į parduotuvę ir nusipirkti reikalingą atsarginę dalį
-              (kraną, spyną, kriauklę, skalbimo mašiną kartu su IKEA virtuve,
-              dėklą, orkaitę, viryklę, sofą ir kt)
-            </li>
-          </ul>
           <p>
-            <img
-              class="attention-mini"
-              src="./assets/svg/⚠️.png"
-              alt=""
-              aria-hidden="true"
-            />Dirbame ir savaitgaliais!
+            Greitai ir kokybiškai padėsime jums suremontuoti arba pakeisti
+            sulaužytą detalę, bei pakluoti grindis ir plyteles.
           </p>
         </div>
         <div class="pricelist">
-          <!--<p>Kaina nuo</p>
-        <p class="price">200€</p>-->
-
+          <p>Kaina nuo</p>
+          <p class="price">200€</p>
           <button type="submit">Užsisakyti paslaugą</button>
         </div>
       </div>
 
-      <div class="tab-content" id="apdaila">
+      <div class="tab-content" id="apdaila" style="display: none">
         <div class="content-text">
-          <p>Vidaus apdailos darbai:</p>
+          <p>Tekstas apie paslauga</p>
           <ul>
-            <li>
-              Gipso kartono montavimas (sienos, lubos, pertvaros, įvairios
-              konstrukcijos)
-            </li>
-            <li>Sienų, lubų paruošimas dažymui, tapetavimui</li>
-            <li>Plytelių klijavimas</li>
-            <li>Laminato, parketlenčių montavimas</li>
-            <li>El. instaliacijų montavimas</li>
-            <li>Ventiliacijos įrengimas</li>
-            <li>Santechnikos darbai (vandentiekis, šildymas, rekuperacija);</li>
-            <li>Griovimo darbai</li>
+            <li>Deja, ši paslauga dar nėra aprašyta</li>
+            <li>Deja, ši paslauga dar nėra aprašyta</li>
+            <li>Deja, ši paslauga dar nėra aprašyta</li>
+            <li>Deja, ši paslauga dar nėra aprašyta</li>
+            <li>Deja, ši paslauga dar nėra aprašyta</li>
           </ul>
-          <p>
-            <img
-              class="attention-mini"
-              src="./assets/svg/⚠️.png"
-              alt=""
-              aria-hidden="true"
-            />Mes naudojame tik profesionalus įrankius, atvežame medžiagas, po
-            darbo išvežame šiukšles.
-          </p>
         </div>
         <div class="pricelist">
-          <!--<p>Kaina nuo</p>
-        <p class="price">200€</p>-->
+          <p>Kaina nuo</p>
+          <p class="price">200€</p>
           <button type="submit">Užsisakyti paslaugą</button>
         </div>
       </div>
@@ -307,14 +267,14 @@
       </div>
     </section>
 
-    <button id="scroll-to-top" class="scroll-to-top">
+    <button id="scroll-to-top" class="scroll-to-top" style="display: none">
       <i class="fas fa-arrow-up"></i>
     </button>
 
-    <!-- Modal with form -->
+    <!-- Модальное окно -->
     <div id="orderModal" class="modal">
       <div class="modal-content">
-        <span class="close-btn">&times;</span>
+        <span class="close-btn">×</span>
         <h2>Malonu, kad pasirinkote mus!</h2>
         <form
           class="modal-form"
@@ -322,7 +282,13 @@
           method="POST"
         >
           <div class="form-item">
-            <input type="text" id="name" name="name" required placeholder=" " />
+            <input
+              type="text"
+              id="name"
+              name="name"
+              required=""
+              placeholder=" "
+            />
             <label for="name">Vardenis</label>
           </div>
 
@@ -332,13 +298,13 @@
               id="phone"
               name="phone"
               pattern="^\+3706\d{7}$"
-              required
+              required=""
               placeholder=" "
             />
             <label for="phone">Telefono numeris</label>
           </div>
-          <select id="paslauga" name="paslauga" required>
-            <option value="" disabled selected hidden>
+          <select id="paslauga" name="paslauga" required="">
+            <option value="" disabled="" selected="" hidden="">
               Pasirinkite paslaugą
             </option>
             <option value="Meistras">Meistras į namus</option>
@@ -354,13 +320,13 @@
     </div>
 
     <footer>
-      <p>Ramybės g. 4, Vilnius, Lietuva</p>
+      <p>adresas g.4-70 LT-02103, Lietuva</p>
       <p>© UAB „buturemontas.lt“, 2025. All Rights Reserved.</p>
     </footer>
 
     <script>
       document.addEventListener("DOMContentLoaded", function () {
-        openTab("baldai"); // Open "Baldų gamyba" by default
+        openTab("apdaila"); // Open "Baldų gamyba" by default
       });
 
       function openTab(tabName) {
@@ -395,9 +361,9 @@
           document.body.scrollTop > 200 ||
           document.documentElement.scrollTop > 200
         ) {
-          scrollToTopButton.style.display = "block";
+          scrollToTopButton.style.display = "block"; 
         } else {
-          scrollToTopButton.style.display = "none";
+          scrollToTopButton.style.display = "none"; 
         }
       };
 
@@ -413,8 +379,9 @@
       const responseMessage = document.getElementById("response-message");
 
       form.addEventListener("submit", function (event) {
-        event.preventDefault();
+        event.preventDefault(); // Prevent form from submitting the normal way
 
+        // Use Fetch API to send the form data
         const formData = new FormData(form);
 
         fetch(form.action, {
@@ -423,13 +390,37 @@
         })
           .then((response) => response.json())
           .then((data) => {
-            responseMessage.innerHTML = `<p class="success-message">Ačiū už užklausą! Mes susisieksime su jumis.</p>`;
-            form.reset();
+            responseMessage.textContent =
+              "Dėkojame už paraišką! Susisieksime su jumis kuo greičiau.";
           })
           .catch((error) => {
-            responseMessage.innerHTML = `<p class="error-message">Klaida. Bandykite vėl vėliau.</p>`;
+            responseMessage.textContent =
+              "Įvyko klaida. Prašome pabandyti vėliau.";
           });
       });
     </script>
+    <script>
+      var modal = document.getElementById("orderModal");
+      var closeModalBtn = document.getElementsByClassName("close-btn")[0];
+      var orderButtons = document.querySelectorAll(".pricelist button"); 
+
+      orderButtons.forEach(function (button) {
+        button.onclick = function () {
+          modal.classList.add("show"); 
+        };
+      });
+
+      closeModalBtn.onclick = function () {
+        modal.classList.remove("show"); 
+      };
+
+      window.onclick = function (event) {
+        if (event.target == modal) {
+          modal.classList.remove("show");
+        }
+      };
+    </script>
+
+    <!--created by vkachovic(etzhmk)-->
   </body>
 </html>
