@@ -42,24 +42,25 @@
        
         <img class="hero-house" src="./assets/svg/HOUSE.svg" alt="house-lines"/>
  
-        <form class="hero-form" 
-                action="https://formspree.io/f/mjkwbodp"
-                method="POST">
+        <form class="hero-form" action="https://formspree.io/f/mjkwbodp" method="POST">
 
             <div class="form-item">
-            <input type="text" id="name" name="name" placeholder="Vardenis" required>
-            <label for="text">Vardenis</label>
+                <input type="text" id="name" name="name" required placeholder=" ">
+                <label for="name">Vardenis</label>
             </div> 
+        
             <div class="form-item">
-            <input type="tel" id="phone" name="phone" placeholder="+37061234567" pattern="^\+3706\d{7}$" required>
-            <label for="tel">Telefono numeris</label>
+                <input type="tel" id="phone" name="phone" pattern="^\+3706\d{7}$" required placeholder=" ">
+                <label for="phone">Telefono numeris</label>
             </div>
-            <select id="paslauga" name="paslauga" required>
-                <option value="" disabled selected hidden>Pasirinkite paslaugą</option>
-                <option value="Meistras">Meistras į namus</option>
-                <option value="Baldai">Baldų gamyba</option>
-                <option value="Apdaila">Vidaus Apdaila</option>
-            </select>
+                <select id="paslauga" name="paslauga" required>
+                    <option value="" disabled selected hidden>Pasirinkite paslaugą</option>
+                    <option value="Meistras">Meistras į namus</option>
+                    <option value="Baldai">Baldų gamyba</option>
+                    <option value="Apdaila">Vidaus Apdaila</option>
+                </select>
+
+        
             <button type="submit" aria-label="Užsisakyti paslaugą">UŽSISAKYTI</button>
         </form>
 

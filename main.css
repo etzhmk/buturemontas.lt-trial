@@ -166,7 +166,7 @@ h1 {
 
 .hero-form input,
 .hero-form select {
-    padding: 0.75rem;
+    padding: 1.2rem 1.2rem 0.75rem;
     font-size: 1rem;
     border: 2px solid var(--black);
     border-radius: 5px;
@@ -175,6 +175,10 @@ h1 {
     box-sizing: border-box;
     position: relative;
     transition: all 0.3s ease;
+}
+
+.hero-form #paslauga {
+    padding: 1rem;
 }
 
 /* Скрываем стандартные плейсхолдеры */
@@ -190,7 +194,7 @@ h1 {
 /* Стиль для меток, которые изначально находятся внутри поля */
 .hero-form label {
     position: absolute;
-    left: 15px;
+    left: 20px;
     top: 50%;
     font-size: 1rem;
     color: var(--grey); /* Цвет меток по умолчанию */
@@ -205,9 +209,8 @@ h1 {
 .hero-form input:not(:placeholder-shown) + label,
 .hero-form select:not(:placeholder-shown) + label {
     top: 15px; /* Меньший сдвиг вверх */
-    left: 10px;
+    left: 20px;
     font-size: 0.875rem;
-    padding-bottom: 2px;
     color: var(--grey); /* Цвет метки при фокусе */
 }
 
@@ -886,6 +889,10 @@ footer p {
 
     .tab-content {
         box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .pricelist button {
+        font-size: 14px;
     }
 
     #kontaktai{
