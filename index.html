@@ -46,8 +46,14 @@
                 action="https://formspree.io/f/mjkwbodp"
                 method="POST">
 
+            <div class="form-item">
             <input type="text" id="name" name="name" placeholder="Vardenis" required>
+            <label for="text">Vardenis</label>
+            </div> 
+            <div class="form-item">
             <input type="tel" id="phone" name="phone" placeholder="+37061234567" pattern="^\+3706\d{7}$" required>
+            <label for="tel">Telefono numeris</label>
+            </div>
             <select id="paslauga" name="paslauga" required>
                 <option value="" disabled selected hidden>Pasirinkite paslaugą</option>
                 <option value="Meistras">Meistras į namus</option>

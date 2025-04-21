@@ -171,8 +171,47 @@ h1 {
     border: 2px solid var(--black);
     border-radius: 5px;
     background-color: var(--white);
+    width: 100%;
+    box-sizing: border-box;
+    position: relative;
+    transition: all 0.3s ease;
 }
 
+/* Скрываем стандартные плейсхолдеры */
+.hero-form input::placeholder,
+.hero-form select::placeholder {
+    color: transparent;
+}
+
+.hero-form .form-item {
+    position: relative;
+}
+
+/* Стиль для меток, которые изначально находятся внутри поля */
+.hero-form label {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    font-size: 1rem;
+    color: var(--grey); /* Цвет меток по умолчанию */
+    transform: translateY(-50%);
+    transition: all 0.2s ease;
+    pointer-events: none; /* Метка не кликабельна */
+}
+
+/* Когда поле в фокусе или если оно не пустое, метка сдвигается вверх */
+.hero-form input:focus + label,
+.hero-form select:focus + label,
+.hero-form input:not(:placeholder-shown) + label,
+.hero-form select:not(:placeholder-shown) + label {
+    top: 15px; /* Меньший сдвиг вверх */
+    left: 10px;
+    font-size: 0.875rem;
+    padding-bottom: 2px;
+    color: var(--grey); /* Цвет метки при фокусе */
+}
+
+/* Стилизация кнопки */
 .hero-form button {
     height: 52px;
     background: var(--btnbg);
@@ -182,14 +221,13 @@ h1 {
     padding: 0.75rem;
     border: none;
     border-radius: 5px;
-
     transition: background 1s ease-out;
 }
 
 .hero-form button:hover {
     background: var(--btnbghover);
 }
-
+  
 
 #apie-mus {
     padding: 50px 0 200px;
@@ -838,6 +876,7 @@ footer p {
     .tab button {
         padding: 0;
         margin: 0;
+        text-align: center;
     }
 
     .tab button.active {
