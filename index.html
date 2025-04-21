@@ -42,7 +42,10 @@
        
         <img class="hero-house" src="./assets/svg/HOUSE.svg" alt="house-lines"/>
  
-        <form class="hero-form" action="send.php" method="POST">
+        <form class="hero-form" 
+                action="https://formspree.io/f/mjkwbodp"
+                method="POST">
+
             <input type="text" id="name" name="name" placeholder="Vardenis" required>
             <input type="tel" id="phone" name="phone" placeholder="+37061234567" pattern="^\+3706\d{7}$" required>
             <select id="paslauga" name="paslauga" required>
@@ -53,6 +56,9 @@
             </select>
             <button type="submit" aria-label="Užsisakyti paslaugą">UŽSISAKYTI</button>
         </form>
+
+        <div id="response-message"></div>
+
     </section>
 
     <section id="apie-mus">
@@ -199,6 +205,29 @@ scrollToTopButton.addEventListener("click", function () {
         behavior: "smooth"
     });
 });
+        </script>
+        <script>
+            const form = document.getElementById('contact-form');
+            const responseMessage = document.getElementById('response-message');
+        
+            form.addEventListener('submit', function(event) {
+                event.preventDefault(); // Prevent form from submitting the normal way
+        
+                // Use Fetch API to send the form data
+                const formData = new FormData(form);
+        
+                fetch(form.action, {
+                    method: form.method,
+                    body: formData,
+                })
+                .then(response => response.json())
+                .then(data => {
+                    responseMessage.textContent = "Dėkojame už paraišką! Susisieksime su jumis kuo greičiau.";
+                })
+                .catch(error => {
+                    responseMessage.textContent = "Įvyko klaida. Prašome pabandyti vėliau.";
+                });
+            });
         </script>
 
     <!--created by vkachovic(etzhmk)-->
