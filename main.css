@@ -1,55 +1,54 @@
 :root {
-    --black: #080808;
-    --white: #fafafa;
-    --blue: #00008B;
-    --grey: #9c9c9c;
-    --font-family: 'Jura', serif; 
-    --font-base: 'PT Sans', serif;
-    --btnbg: radial-gradient(circle, #00008B, #1a5fb4);
-    --btnbghover: radial-gradient(circle, #1a5fb4, #00008B);
+  --black: #080808;
+  --white: #fafafa;
+  --blue: #00008b;
+  --grey: #9c9c9c;
+  --font-family: "Jura", serif;
+  --font-base: "PT Sans", serif;
+  --btnbg: radial-gradient(circle, #00008b, #1a5fb4);
+  --btnbghover: radial-gradient(circle, #1a5fb4, #00008b);
 }
 
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 html {
-    scroll-behavior: smooth;
-  }
+  scroll-behavior: smooth;
+}
 
 body {
-    min-width: 30%;
-    max-width: 1440px;
-    margin: 0 auto;
-    background-color: var(--white);
+  min-width: 30%;
+  max-width: 1440px;
+  margin: 0 auto;
+  background-color: var(--white);
 }
 
 button {
-    font-family: var(--font-family);
-    font-size: 20px;
-    font-weight: bold;
-    height: 40px;
-    border-radius: 5px;
-    text-transform: uppercase;
-    cursor: pointer;
+  font-family: var(--font-family);
+  font-size: 20px;
+  font-weight: bold;
+  height: 40px;
+  border-radius: 5px;
+  text-transform: uppercase;
+  cursor: pointer;
 }
 
 a {
-    text-decoration: none;
-    color: var(--black);
+  text-decoration: none;
+  color: var(--black);
 }
 
 a:hover {
-    text-decoration: underline;
-    color: var(--black);
-    cursor: pointer;
+  text-decoration: underline;
+  color: var(--black);
+  cursor: pointer;
 }
 
 p {
-    font-family: var(--font-base);
+  font-family: var(--font-base);
 }
-
 nav {
     width: 100%;
     padding: 10px 0;
@@ -59,54 +58,54 @@ nav {
     justify-content: space-between;
     position: relative;
     z-index: 10;
-}
-
-.logo-nav {
+  }
+  
+  .logo-nav {
     margin-left: 145px;
     padding-top: 10px;
-}
-
-.ul-nav {
+  }
+  
+  .ul-nav {
     margin-right: 145px;
     padding: 10px;
     display: inline-flex;
     align-items: center;
     background: linear-gradient(
-        to right,
-        transparent 3%,
-        var(--white) 17%,
-        var(--white) 80%,
-        transparent 100%
+      to right,
+      transparent 3%,
+      var(--white) 17%,
+      var(--white) 80%,
+      transparent 100%
     );
-}
-
-.ul-nav > li {
+  }
+  
+  .ul-nav > li {
     padding: 0 24px;
     font-size: 20px;
     font-weight: 700;
     font-family: var(--font-family);
     list-style-type: none;
-}
-
-#menu-toggle {
+  }
+  
+  #menu-toggle {
     display: none;
-}
-
-.menu-icon {
+  }
+  
+  .menu-icon {
     display: none;
     flex-direction: column;
     gap: 5px;
     cursor: pointer;
     margin-left: auto;
-}
-
-.menu-icon span {
+  }
+  
+  .menu-icon span {
     width: 25px;
     height: 3px;
     background-color: var(--black);
-}
-
-#hero {
+  }
+  
+  #hero {
     height: auto;
     max-height: 720px;
     display: flex;
@@ -115,31 +114,32 @@ nav {
     position: relative;
     padding: 60px 145px 0;
     overflow: visible;
-}
-
-.hero-text {
+  }
+  
+  .hero-text {
     max-width: 770px;
-}
-
-h1 {
+  }
+  
+  h1 {
     width: 770px;
     font-size: 60px;
     font-family: var(--font-family);
-}
-
-.attention-box {
+  }
+  
+  .attention-box {
     margin-top: 80px;
     display: flex;
     align-items: center;
-}
-
-.attention, .attention-mini {
+  }
+  
+  .attention,
+  .attention-mini {
     width: 30px;
     height: 30px;
     margin-right: 13px;
-}
-
-.hero-house {
+  }
+  
+  .hero-house {
     max-width: 665px;
     height: auto;
     position: relative;
@@ -147,10 +147,9 @@ h1 {
     right: 175px;
     z-index: 1;
     margin-bottom: -260px;
-    
-}
-
-.hero-form {
+  }
+  
+  .hero-form {
     position: relative;
     top: -15px;
     right: 690px;
@@ -162,10 +161,10 @@ h1 {
     flex-direction: column;
     gap: 30px;
     z-index: 2;
-}
-
-.hero-form input,
-.hero-form select {
+  }
+  
+  .hero-form input,
+  .hero-form select {
     padding: 1.2rem 1.2rem 0.75rem;
     font-size: 1rem;
     border: 2px solid var(--black);
@@ -175,48 +174,44 @@ h1 {
     box-sizing: border-box;
     position: relative;
     transition: all 0.3s ease;
-}
-
-.hero-form #paslauga {
+  }
+  
+  .hero-form #paslauga {
     padding: 1rem;
-}
-
-/* Скрываем стандартные плейсхолдеры */
-.hero-form input::placeholder,
-.hero-form select::placeholder {
+  }
+  
+  .hero-form input::placeholder,
+  .hero-form select::placeholder {
     color: transparent;
-}
-
-.hero-form .form-item {
+  }
+  
+  .hero-form .form-item {
     position: relative;
-}
-
-/* Стиль для меток, которые изначально находятся внутри поля */
-.hero-form label {
+  }
+  
+  .hero-form label {
     position: absolute;
     left: 20px;
     top: 50%;
     font-size: 1rem;
     font-family: var(--font-base);
-    color: var(--grey); /* Цвет меток по умолчанию */
+    color: var(--grey);
     transform: translateY(-50%);
     transition: all 0.2s ease;
-    pointer-events: none; /* Метка не кликабельна */
-}
-
-/* Когда поле в фокусе или если оно не пустое, метка сдвигается вверх */
-.hero-form input:focus + label,
-.hero-form select:focus + label,
-.hero-form input:not(:placeholder-shown) + label,
-.hero-form select:not(:placeholder-shown) + label {
-    top: 15px; /* Меньший сдвиг вверх */
+    pointer-events: none;
+  }
+  
+  .hero-form input:focus + label,
+  .hero-form select:focus + label,
+  .hero-form input:not(:placeholder-shown) + label,
+  .hero-form select:not(:placeholder-shown) + label {
+    top: 15px;
     left: 20px;
     font-size: 0.875rem;
-    color: var(--grey); /* Цвет метки при фокусе */
-}
-
-/* Стилизация кнопки */
-.hero-form button {
+    color: var(--grey);
+  }
+  
+  .hero-form button {
     height: 52px;
     background: var(--btnbg);
     color: var(--white);
@@ -226,21 +221,20 @@ h1 {
     border: none;
     border-radius: 5px;
     transition: background 1s ease-out;
-}
-
-.hero-form button:hover {
-    background: var(--btnbghover);
-}
+  }
   
-
-#apie-mus {
+  .hero-form button:hover {
+    background: var(--btnbghover);
+  }
+  
+  #apie-mus {
     padding: 50px 0 200px;
     display: flex;
     height: auto;
     width: auto;
-}
-
-h2 {
+  }
+  
+  h2 {
     padding: 0;
     margin: 0;
     width: 410px;
@@ -249,9 +243,9 @@ h2 {
     color: var(--white);
     font-family: var(--font-family);
     margin-bottom: 60px;
-}
-
-.apie-bg {
+  }
+  
+  .apie-bg {
     width: 410px;
     height: 100px;
     margin-left: 80px;
@@ -260,9 +254,9 @@ h2 {
     border-radius: 5px;
     position: relative;
     z-index: 5;
-}
-
-.apie-mus-bg {
+  }
+  
+  .apie-mus-bg {
     max-width: 460px;
     width: 420px;
     max-height: 285px;
@@ -277,21 +271,23 @@ h2 {
     position: relative;
     box-shadow: var(--blue) 4px 6px;
     font-size: 20px;
-}
-
-.first-img {
+  }
+  
+  .first-img {
     box-shadow: var(--blue) 4px 6px;
     border-radius: 5px;
-}
-
-.second-images {
+  }
+  
+  .second-images {
     width: 545px;
     height: 656px;
     margin-top: 100px;
     margin-left: 150px;
-}
-
-.second-first, .second-second, .second-third {
+  }
+  
+  .second-first,
+  .second-second,
+  .second-third {
     width: 319px;
     height: 308px;
     background-color: yellow;
@@ -299,66 +295,67 @@ h2 {
     border-radius: 5px;
     position: relative;
     z-index: 2;
-}
-
-.second-first {
+  }
+  
+  .second-first {
     z-index: 9;
-}
-
-.second-second {
+  }
+  
+  .second-second {
     margin: -180px 0 0 220px;
     z-index: 8;
-}
-
-.second-third {
+  }
+  
+  .second-third {
     margin: -70px 0 0 45px;
     z-index: 7;
-}
-
-#paslaugos {
+  }
+  
+  #paslaugos {
     width: auto;
-    height: 800px;
+    height: auto;
     background-color: var(--white);
     color: var(--white);
     display: flex;
-}
-
-#paslaugos h2 {
+  }
+  
+  #paslaugos h2 {
     margin: 0;
     padding: 0;
     margin: 100px 0 110px 145px;
-}
-.tabs-left-side {
+  }
+  
+  .tabs-left-side {
     margin: 0;
     padding: 0;
-    width: 100%; /* Убираем max-width: auto */
-    max-width: 590px; /* Делаем ширину контейнера фиксированной */
-    height: 100%;
+    width: 100%;
+    max-width: 590px;
     background: var(--blue);
     border-radius: 5px 0 0 5px;
-}
-
-.tab-content {
+  }
+  
+  .tab-content {
     padding: 40px 20px;
     box-shadow: 5px 2px 10px rgba(0, 0, 0, 0.1);
-    width: 100%; /* Контейнер займет 100% ширины родителя */
-    box-sizing: border-box; /* Учитываем отступы и границы */
-}
-
-.tab {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+  }
+  
+  .tab {
     margin: 0 100px 0 0;
     width: 590px;
     display: flex;
     flex-direction: column;
     gap: 16px;
-}
-
-.tab-link {
+  }
+  
+  .tab-link {
     width: 100%;
     height: 60px;
-}
-
-.tab button {
+  }
+  
+  .tab button {
     color: var(--white);
     background: var(--btnbghover);
     border: none;
@@ -366,61 +363,61 @@ h2 {
     text-align: left;
     padding-left: 145px;
     transition: background 0.3s ease-out;
-}
-
-.tab button.active {
+  }
+  
+  .tab button.active {
     background: var(--white);
     color: var(--black);
     padding-left: 170px;
-}
-
-.content-text {
-    width: 100%; /* Блок будет адаптироваться под ширину родителя */
-    max-width: 590px; /* Максимальная ширина - 590px */
+  }
+  
+  .content-text {
+    width: 100%;
+    max-width: 900px;
     background-color: var(--white);
     color: var(--black);
     margin: 0;
-    padding: 5rem 1rem 0 6rem; /* Уменьшил отступы справа и слева */
+    padding: 4rem 1rem 0 4rem;
     font-size: 20px;
     display: flex;
     flex-direction: column;
-    box-sizing: border-box; /* Чтобы отступы учитывались в ширине */
-}
-
-.content-text ul {
+    box-sizing: border-box;
+  }
+  
+  .content-text ul {
     padding: 20px 40px 50px;
-}
-
-.content-text li {
+  }
+  
+  .content-text li {
     font-family: var(--font-base);
-}
-
-.content-text p {
+  }
+  
+  .content-text p {
     display: flex;
-}
-
-.pricelist {
+  }
+  
+  .pricelist {
     margin-top: 30px;
     padding: 30px;
     text-align: center;
-}
-
-.pricelist p {
+  }
+  
+  .pricelist p {
     font-size: 18px;
-    color: var(--grey); /* Цвет текста */
+    color: var(--grey);
     margin-bottom: 10px;
-}
-
-.pricelist .price {
+  }
+  
+  .pricelist .price {
     font-size: 40px;
     font-weight: bold;
-    color: var(--blue); /* Цвет цены */
+    color: var(--blue);
     margin-bottom: 20px;
-}
-
-.pricelist button {
+  }
+  
+  .pricelist button {
     height: 52px;
-    background: var(--btnbg); /* Цвет кнопки */
+    background: var(--btnbg);
     color: var(--white);
     font-weight: bold;
     font-size: 20px;
@@ -429,37 +426,37 @@ h2 {
     border-radius: 5px;
     cursor: pointer;
     transition: background 0.3s ease;
-}
-
-.pricelist button:hover {
-    background: var(--btnbghover); /* Цвет кнопки при наведении */
-}
-
-#kontaktai {
+  }
+  
+  .pricelist button:hover {
+    background: var(--btnbghover);
+  }
+  
+  #kontaktai {
     width: auto;
     height: 600px;
     margin: 100px 0 0 0;
     color: var(--white);
     padding: 150px 145px 0;
     background: var(--blue);
-}  
-
-#kontaktai h2 {
+  }
+  
+  #kontaktai h2 {
     width: auto;
     margin: 0;
-}
-#kontaktai p {
+  }
+  
+  #kontaktai p {
     font-size: 30px;
     font-family: var(--font-family);
     font-weight: bold;
     margin: 0;
     margin: 40px 0 60px;
-}
-
-.tel {
+  }
+  
+  .tel {
     width: 350px;
     height: 46px;
-
     border-radius: 5px;
     font-family: var(--font-base);
     font-size: 20px;
@@ -467,98 +464,89 @@ h2 {
     align-items: center;
     justify-content: center;
     background: var(--white);
-
     transition: background 0.3s ease-in-out, box-shadow 0.3s ease;
-}
-
-.tel:hover {
+  }
+  
+  .tel:hover {
     text-decoration: none;
     background: var(--btnbghover);
     color: var(--white);
     box-shadow: 0px 0 200px var(--white);
-}
-
-.tel i {
+  }
+  
+  .tel i {
     margin: 0 30px 0 0;
-}
-
-.contact-links {
+  }
+  
+  .contact-links {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 25px 110px; /* вертикальный и горизонтальный отступ */
+    gap: 25px 110px;
     justify-content: space-between;
     margin-top: 60px;
-}
-
-footer {
+  }
+  
+  footer {
     display: flex;
     justify-content: space-between;
     background: var(--blue);
     margin: 0;
     color: var(--white);
     padding: 0 145px 20px;
-}
-
-footer p {
+  }
+  
+  footer p {
     font-family: var(--font-family);
-}
-
-/*--SCROLL BUTTON--*/
-
-.scroll-to-top {
+  }
+  
+  .scroll-to-top {
     position: fixed;
-    bottom: 70px; 
-    right: 60px;  
-    background: var(--btnbghover); 
+    bottom: 70px;
+    right: 60px;
+    background: var(--btnbghover);
     color: white;
     border: 5px solid var(--white);
-    border-radius: 50%; 
+    border-radius: 50%;
     width: 70px;
     height: 70px;
     font-size: 20px;
     text-align: center;
-    display: none; 
+    display: none;
     cursor: pointer;
     z-index: 100;
-}
-
-.scroll-to-top:hover {
-    background: var(--white); 
+  }
+  
+  .scroll-to-top:hover {
+    background: var(--white);
     border: 5px solid var(--blue);
     color: var(--blue);
-}
-
-
-
-/* MODAL */
-
-/* Модальное окно */
-.modal {
-    display: none; /* Скрыто по умолчанию */
+  }
+  
+  .modal {
+    display: none;
     position: fixed;
     z-index: 100;
     left: 0;
     top: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.4); /* Полупрозрачный фон */
+    background-color: rgba(0, 0, 0, 0.4);
     padding-top: 100px;
     transition: opacity 0.3s ease;
     opacity: 0;
-}
-
-.modal.show {
+  }
+  
+  .modal.show {
     display: block;
     opacity: 1;
-}
-
-/* Содержимое модального окна */
-.modal-content {
+  }
+  
+  .modal-content {
     background-color: var(--white);
     margin: auto;
     padding: 40px 26px;
     width: 100%;
-    max-width: 415px; /* Ограничиваем максимальную ширину */
+    max-width: 415px;
     height: auto;
     max-height: 670px;
     border-radius: 5px;
@@ -567,9 +555,9 @@ footer p {
     flex-direction: column;
     align-items: center;
     box-sizing: border-box;
-}
-
-.modal-content h2 {
+  }
+  
+  .modal-content h2 {
     color: var(--black);
     text-align: center;
     font-size: 40px;
@@ -577,17 +565,17 @@ footer p {
     width: 100%;
     max-width: 320px;
     margin: 60px 0;
-}
-
-.modal-form {
+  }
+  
+  .modal-form {
     display: flex;
     flex-direction: column;
     gap: 15px;
     margin-bottom: 40px;
-}
-
-.modal-form input,
-.modal-form select {
+  }
+  
+  .modal-form input,
+  .modal-form select {
     padding: 1.2rem 1.2rem 0.75rem;
     font-size: 1rem;
     border: 2px solid var(--black);
@@ -597,454 +585,478 @@ footer p {
     box-sizing: border-box;
     position: relative;
     transition: all 0.3s ease;
-}
-
-.modal-form #paslauga {
+  }
+  
+  .modal-form #paslauga {
     padding: 1rem;
-}
-
-/* Скрываем стандартные плейсхолдеры */
-.modal-form input::placeholder,
-.modal-form select::placeholder {
+  }
+  
+  .modal-form input::placeholder,
+  .modal-form select::placeholder {
     color: transparent;
-}
-
-.modal-form .form-item {
+  }
+  
+  .modal-form .form-item {
     position: relative;
-}
-
-/* Стиль для меток, которые изначально находятся внутри поля */
-.modal-form label {
+  }
+  
+  .modal-form label {
     position: absolute;
     left: 20px;
     top: 50%;
     font-size: 1rem;
     font-family: var(--font-base);
-    color: var(--grey); /* Цвет меток по умолчанию */
+    color: var(--grey);
     transform: translateY(-50%);
     transition: all 0.2s ease;
-    pointer-events: none; /* Метка не кликабельна */
-}
-
-/* Когда поле в фокусе или если оно не пустое, метка сдвигается вверх */
-.modal-form input:focus + label,
-.modal-form select:focus + label,
-.modal-form input:not(:placeholder-shown) + label,
-.modal-form select:not(:placeholder-shown) + label {
-    top: 15px; /* Меньший сдвиг вверх */
+    pointer-events: none;
+  }
+  
+  .modal-form input:focus + label,
+  .modal-form select:focus + label,
+  .modal-form input:not(:placeholder-shown) + label,
+  .modal-form select:not(:placeholder-shown) + label {
+    top: 15px;
     left: 20px;
     font-size: 0.875rem;
-    color: var(--grey); /* Цвет метки при фокусе */
-}
-
-/* Стилизация кнопки */
-.modal-form button {
+    color: var(--grey);
+  }
+  
+  .modal-form button {
     border: none;
     height: 52px;
     background: var(--btnbg);
     color: var(--white);
-}
-
-.modal-form button:hover {
+  }
+  
+  .modal-form button:hover {
     background: var(--btnbghover);
-}
-
-/* Кнопка закрытия */
-.close-btn {
+  }
+  
+  .close-btn {
     color: var(--black);
     font-size: 50px;
     font-weight: bold;
     position: absolute;
     right: 40px;
     top: 36px;
-}
-
-.close-btn:hover,
-.close-btn:focus {
+  }
+  
+  .close-btn:hover,
+  .close-btn:focus {
     color: black;
     text-decoration: none;
     cursor: pointer;
-}
+  }
+  
+  .modal-ty {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+    animation: fadeIn 0.3s ease-in-out;
+  }
+  
+  .modal-content-ty {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    width: 300px;
+    height: 120px;
+    position: relative;
+    text-align: center;
+  }
+  
+  .modal-content-ty button {
+    background: var(--btnbg);
+    padding: 10px 15px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-top: 15px;
+    cursor: pointer;
+  }
+  
+  .modal-content-ty button:hover {
+    background: var(--btnbghover);
+  }
+  
 
 /*--RESPONSIBLE--*/
 @media screen and (max-width: 1330px) {
-
-    nav {
-        width: 90%;
-        margin: 0 auto;
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .logo-nav {
-        margin: 0 auto;
-    }
-
-    .ul-nav {
-        justify-content: center;
-        flex-wrap: wrap;
-        margin: 40px auto 0;
-    }
-
-    #hero {
-        width: 90%;
-        margin: 0 auto;
-        padding: 0;
-        flex-direction: column;
-        align-items: center;
-        justify-content: flex-start;
-        height: auto;
-        max-height: none;
-
-    }
-
-    .hero-text {
-        text-align: center;
-        margin: 100px auto 50px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    
-    h1 {
-        width: auto;
-        max-width: 770px;
-        min-width: 20%;
-        text-align: center;
-    }
-
-    h2 {
-        color: var(--black);
-        margin-bottom: 150px;
-    }
-
-    p {
-        font-size: 20px;
-    }
-    
-    .hero-house {
-        display: none;
-    }
-
-    .hero-form {
-        top: 0;
-        right: 0;
-        left: 0;
-        width: 500px;
-        margin: 0 auto;
-        padding: 2rem;
-        padding-bottom: 50px;
-        position: relative;
-        display: flex;
-        flex-direction: column;
-        gap: 30px;
-        min-width: 300px;
-        border-radius: 8px;
-        z-index: 1;
-        
-    }
-  
-    .hero-form input,
-    .hero-form select {
-        padding: 1.5rem;
-        font-size: 1rem;
-        border: 2px solid var(--black);
-        border-radius: 4px;
-        background-color: var(--white);
-    }
-  
-    .hero-form button {
-        height: 80px;
-        background: var(--blue);
-        color: var(--white);
-        font-weight: bold;
-        font-size: 20px;
-        padding: 1.6rem;
-        border: none;
-        border-radius: 4px;
-        cursor: pointer;
-    }   
-
-    #apie-mus {
-        width: 90%;
-        height: auto;
-        margin: 50px auto;
-        padding: 0;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-
-    .apie-bg {
-        margin: 0;
-        padding: 100px 0;
-        height: auto;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        background-color: transparent;
-    }
-
-    .first-img {
-        display: none;
-    }
-
-    .second-images {
-        display: none;
-    }
-    
-    #paslaugos h2, #kontaktai h2 {
-        color: var(--white);
-    }
-
-    #paslaugos {
-        margin: 0 auto;
-    }
-    
-    .tabs-left-side {
-        max-width: 100%;
-        width: 100%;
-        margin: 0 auto;
-    }
-
-    .tab {
-        margin: 0;
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-    }
-
-    .tab-link {
-        text-align: center; /* Выравниваем кнопки табов по центру */
-    }
-
-    .content-text {
-        padding: 3rem 1rem 0 2rem; /* Уменьшаем отступы для мобильных */
-        font-size: 18px;
-        max-width: 100%; /* Чтобы блок не выходил за пределы */
-    }
-
-    .content-text ul {
-        padding: 20px 0;
-    }
-
-    .pricelist {
-        margin-top: 30px;
-    }
-
-    .pricelist p,
-    .pricelist .price {
-        font-size: 16px;
-    }
-
-    .pricelist button {
-        font-size: 18px;
-        padding: 1rem;
-    }
-
-    #paslaugos {
-        margin-bottom: 100px;
-    }
-
-    #kontaktai{
-        margin: 0 auto;
-        text-align: center;
-    }
-
-    footer p {
-        font-size: 16px;
-    }
-
+  nav {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
   }
 
-
-  @media screen and (max-width: 1100px){
-
-    .tabs-left-side {
-        max-width: 100%;
-    }
-
-    .tab-link {
-        font-size: 16px;
-        padding-left: 20px; /* Меньше отступа слева для кнопок */
-    }
-
-    .content-text {
-        padding: 2rem 1rem;
-    }
-
-    .pricelist p {
-        font-size: 14px;
-    }
-
-    .pricelist .price {
-        font-size: 32px;
-    }
-
-    .pricelist button {
-        font-size: 16px;
-        padding: 1rem 30px;
-    }
-
-    .contact-links {
-        grid-template-columns: 1fr;
-        gap: 20px;
-        max-width: 350px;
-        margin: 0 auto;
-    }
-
-    footer  {
-        font-size: 16px;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    footer p {
-        padding: 0 0 10px;
-    }
+  .logo-nav {
+    margin: 0 auto;
   }
+
+  .ul-nav {
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 40px auto 0;
+  }
+
+  #hero {
+    width: 90%;
+    margin: 0 auto;
+    padding: 0;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: auto;
+    max-height: none;
+  }
+
+  .hero-text {
+    text-align: center;
+    margin: 100px auto 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  h1 {
+    width: auto;
+    max-width: 770px;
+    min-width: 20%;
+    text-align: center;
+  }
+
+  h2 {
+    color: var(--black);
+    margin-bottom: 150px;
+  }
+
+  p {
+    font-size: 20px;
+  }
+
+  .hero-house {
+    display: none;
+  }
+
+  .hero-form {
+    top: 0;
+    right: 0;
+    left: 0;
+    width: 500px;
+    margin: 0 auto;
+    padding: 2rem;
+    padding-bottom: 50px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    min-width: 300px;
+    border-radius: 8px;
+    z-index: 1;
+  }
+
+  .hero-form input,
+  .hero-form select {
+    padding: 1.5rem;
+    font-size: 1rem;
+    border: 2px solid var(--black);
+    border-radius: 4px;
+    background-color: var(--white);
+  }
+
+  .hero-form button {
+    height: 80px;
+    background: var(--blue);
+    color: var(--white);
+    font-weight: bold;
+    font-size: 20px;
+    padding: 1.6rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  #apie-mus {
+    width: 90%;
+    height: auto;
+    margin: 50px auto;
+    padding: 0;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .apie-bg {
+    margin: 0;
+    padding: 100px 0;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: transparent;
+  }
+
+  .first-img {
+    display: none;
+  }
+
+  .second-images {
+    display: none;
+  }
+
+  #paslaugos h2,
+  #kontaktai h2 {
+    color: var(--white);
+  }
+
+  #paslaugos {
+    margin: 0 auto;
+  }
+
+  .tabs-left-side {
+    max-width: 100%;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .tab {
+    margin: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .tab-link {
+    text-align: center; /* Выравниваем кнопки табов по центру */
+  }
+
+  .content-text {
+    padding: 3rem 1rem 0 2rem; /* Уменьшаем отступы для мобильных */
+    font-size: 18px;
+    max-width: 100%; /* Чтобы блок не выходил за пределы */
+  }
+
+  .content-text ul {
+    padding: 20px 0;
+  }
+
+  .pricelist {
+    margin-top: 30px;
+  }
+
+  .pricelist p,
+  .pricelist .price {
+    font-size: 16px;
+  }
+
+  .pricelist button {
+    font-size: 18px;
+    padding: 1rem;
+  }
+
+  #paslaugos {
+    margin-bottom: 100px;
+  }
+
+  #kontaktai {
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  footer p {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .tabs-left-side {
+    max-width: 100%;
+  }
+
+  .tab-link {
+    font-size: 16px;
+    padding-left: 20px; /* Меньше отступа слева для кнопок */
+  }
+
+  .content-text {
+    padding: 2rem 1rem;
+  }
+
+  .pricelist p {
+    font-size: 14px;
+  }
+
+  .pricelist .price {
+    font-size: 32px;
+  }
+
+  .pricelist button {
+    font-size: 16px;
+    padding: 1rem 30px;
+  }
+
+  .contact-links {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    max-width: 350px;
+    margin: 0 auto;
+  }
+
+  footer {
+    font-size: 16px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  footer p {
+    padding: 0 0 10px;
+  }
+}
 
 @media screen and (max-width: 900px) {
+  nav {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    height: auto;
+    margin: 20px auto;
+  }
 
-    nav {
-        display: flex;
-        flex-direction: row;
-        width: 90%;
-        height: auto;
-        margin: 20px auto;
-    }
+  h1 {
+    font-size: 40px;
+  }
 
+  h2 {
+    font-size: 30px;
+  }
 
-    h1 {
-        font-size: 40px;
-    }
+  p {
+    font-size: 18px;
+  }
 
-    h2 {
-        font-size: 30px;
-    }
+  #kontaktai p {
+    font-size: 25px;
+  }
 
-    p {
-        font-size: 18px;
-    }
+  .ul-nav {
+    padding: 10px 0;
+    display: none;
+    flex-direction: column;
+    background-color: var(--white);
+    position: absolute;
+    top: 20px;
+    gap: 2rem;
+    left: 0;
+    width: 100%;
+  }
 
-    #kontaktai p {
-        font-size: 25px;
-    }
+  #menu-toggle:checked + .menu-icon + .ul-nav {
+    display: flex;
+  }
 
-    .ul-nav {
-        padding: 10px 0;
-        display: none;
-        flex-direction: column;
-        background-color: var(--white);
-        position: absolute;
-        top: 20px;
-        gap: 2rem;
-        left: 0;
-        width: 100%;
-    }
+  .menu-icon {
+    display: flex;
+    padding-top: 17px;
+  }
 
-    #menu-toggle:checked + .menu-icon + .ul-nav {
-        display: flex;
-    }
+  .ul-nav > li {
+    padding: 10px 0;
+    font-size: 25px;
+  }
 
-    .menu-icon {
-        display: flex;
-        padding-top: 17px;
-    }
+  #hero {
+    width: 90%;
+    margin: 0 auto;
+  }
 
-    .ul-nav > li {
-        padding: 10px 0;
-        font-size: 25px;
-    }
+  .hero-form {
+    max-width: 60%;
+    padding: 0;
+    margin: 0 auto;
+  }
 
-    #hero {
-        width: 90%;
-        margin: 0 auto;
-    }
+  #apie-mus {
+    margin-top: 100px;
+    width: 90%;
+    text-align: center;
+  }
 
-    .hero-form {
-        max-width: 60%;
-        padding: 0;
-        margin: 0 auto;
-    }
+  .apie-mus {
+    width: 60%;
+  }
 
-    #apie-mus {
-        margin-top: 100px;
-        width: 90%;
-        text-align: center;
-    }
+  .apie-mus-bg {
+    width: 50%;
+  }
 
-    .apie-mus {
-        width: 60%;
-    }
+  .scroll-to-top {
+    position: fixed;
+    bottom: 70px; /* Расстояние от низа */
+    right: 10px;
+  }
 
-    .apie-mus-bg {
-        width: 50%;
-    }
+  #paslaugos {
+    flex-direction: column;
+    height: auto;
+    padding: 0;
+    margin: 0;
+    margin: 0 auto;
+    margin-bottom: 100px;
+    width: 90%;
+  }
 
-    .scroll-to-top {
-        position: fixed;
-        bottom: 70px; /* Расстояние от низа */
-        right: 10px; 
-    }
+  #paslaugos h2 {
+    width: 60%;
+    margin: 0;
+    padding: 0;
+    margin: 0 auto;
+    text-align: center;
+    padding: 50px;
+  }
 
-    #paslaugos {
-        flex-direction: column;
-        height: auto;
-        padding: 0;
-        margin: 0;
-        margin: 0 auto;
-        margin-bottom: 100px;
-        width: 90%;
-    }
+  .tab {
+    flex-direction: row;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+  }
 
-    #paslaugos h2 {
-        width: 60%;
-        margin: 0;
-        padding: 0;
-        margin: 0 auto;
-        text-align: center;
-        padding: 50px;
-    }
+  .tab button {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+  }
 
+  .tab button.active {
+    padding: 0;
+    margin: 0;
+  }
 
-    .tab {
-        flex-direction: row;
-        width: 100%;
-        text-align: center;
-        justify-content: center;
-    }
+  .tab-content {
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+  }
 
-    .tab button {
-        padding: 0;
-        margin: 0;
-        text-align: center;
-    }
+  .pricelist button {
+    font-size: 14px;
+  }
 
-    .tab button.active {
-        padding: 0;
-        margin: 0;
-    }
+  #kontaktai {
+    padding: 0;
+    padding: 100px 0 0;
+  }
 
-    .tab-content {
-        box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
-    }
-
-    .pricelist button {
-        font-size: 14px;
-    }
-
-    #kontaktai{
-        padding: 0;
-        padding: 100px 0 0;
-    }
-
-    footer {
-        padding: 0 10px;
-        text-align: center;
-    }
-
-
+  footer {
+    padding: 0 10px;
+    text-align: center;
+  }
 }

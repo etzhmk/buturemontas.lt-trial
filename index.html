@@ -1,104 +1,186 @@
 <!DOCTYPE html>
 <html lang="lt">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Butų remontas Vilniuje: meistras į namus, baldų gamyba, vidaus apdaila. Dirbame ir savaitgaliais!">
-    <meta name="keywords" content="remontas, Vilnius, baldų gamyba, meistras, Meistras į namus, vidaus apdaila">
-    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Jura:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="./main.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Butų remontas Vilniuje: meistras į namus, baldų gamyba, vidaus apdaila. Dirbame ir savaitgaliais!"
+    />
+    <meta
+      name="keywords"
+      content="remontas, Vilnius, baldų gamyba, meistras, Meistras į namus, vidaus apdaila"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jura:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./main.css" />
     <title>Meistras i namus</title>
-</head>
-<body>
+  </head>
+  <body>
     <nav>
-        <a href="/" aria-label="Pagrindinis puslapis">
-        <img class="logo-nav" src="./assets/svg/general logo 1.svg" alt="buturemontas.lt logo"/>
-        </a>
+      <a href="/" aria-label="Pagrindinis puslapis">
+        <img
+          class="logo-nav"
+          src="./assets/svg/general logo 1.svg"
+          alt="buturemontas.lt logo"
+        />
+      </a>
 
-        <input type="checkbox" id="menu-toggle" aria-label="Toggle navigation menu" />
-        <label class="menu-icon" for="menu-toggle">
-          <span></span>
-          <span></span>
-          <span></span>
-        </label>
+      <input
+        type="checkbox"
+        id="menu-toggle"
+        aria-label="Toggle navigation menu"
+      />
+      <label class="menu-icon" for="menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
 
-        <ul class="ul-nav">
-            <li><a href="#apie-mus">Apie mus</a></li>
-            <li><a href="#paslaugos">Paslaugos</a></li>
-            <li><a href="#kontaktai">Kontaktai</a></li>
-        </ul>
+      <ul class="ul-nav">
+        <li><a href="#apie-mus">Apie mus</a></li>
+        <li><a href="#paslaugos">Paslaugos</a></li>
+        <li><a href="#kontaktai">Kontaktai</a></li>
+      </ul>
     </nav>
 
     <section id="hero">
-        <div class="hero-text">
+      <div class="hero-text">
         <h1>Greitas ir kokybiškas remontas jūsų namams</h1>
-            <div class="attention-box">
-                <img class="attention" src="./assets/svg/⚠️.png" alt="attention-signal-emoji"/>
-                <p> Dirbame ir savaitgaliais</p>
-            </div>
+        <div class="attention-box">
+          <img
+            class="attention"
+            src="./assets/svg/⚠️.png"
+            alt="attention-signal-emoji"
+          />
+          <p>Dirbame ir savaitgaliais</p>
         </div>
-       
-        <img class="hero-house" src="./assets/svg/HOUSE.svg" alt="house-lines"/>
- 
-        <form class="hero-form" action="https://formspree.io/f/mjkwbodp" method="POST">
+      </div>
 
-            <div class="form-item">
-                <input type="text" id="name" name="name" required placeholder=" ">
-                <label for="name">Vardenis</label>
-            </div> 
-        
-            <div class="form-item">
-                <input type="tel" id="phone" name="phone" pattern="^\+3706\d{7}$" required placeholder=" ">
-                <label for="phone">Telefono numeris</label>
-            </div>
-                <select id="paslauga" name="paslauga" required>
-                    <option value="" disabled selected hidden>Pasirinkite paslaugą</option>
-                    <option value="Meistras">Meistras į namus</option>
-                    <option value="Baldai">Baldų gamyba</option>
-                    <option value="Apdaila">Vidaus Apdaila</option>
-                </select>
+      <img class="hero-house" src="./assets/svg/HOUSE.svg" alt="house-lines" />
 
-        
-            <button type="submit" aria-label="Užsisakyti paslaugą">UŽSISAKYTI</button>
-        </form>
+      <form
+        class="hero-form"
+        action="https://formspree.io/f/mjkwbodp"
+        method="POST"
+      >
+        <div class="form-item">
+          <input type="text" id="name" name="name" required placeholder=" " />
+          <label for="name">Vardenis</label>
+        </div>
 
-        <div id="response-message"></div>
+        <div class="form-item">
+          <input
+            type="tel"
+            id="phone"
+            name="phone"
+            pattern="^\+3706\d{7}$"
+            required
+            placeholder=" "
+          />
+          <label for="phone">Telefono numeris</label>
+        </div>
+        <select id="paslauga" name="paslauga" required>
+          <option value="" disabled selected hidden>
+            Pasirinkite paslaugą
+          </option>
+          <option value="Meistras">Meistras į namus</option>
+          <option value="Baldai">Baldų gamyba</option>
+          <option value="Apdaila">Vidaus Apdaila</option>
+        </select>
 
+        <button type="submit" aria-label="Užsisakyti paslaugą">
+          UŽSISAKYTI
+        </button>
+      </form>
+
+      <div id="response-message"></div>
     </section>
 
     <section id="apie-mus">
-            <div class="apie-bg">
-            <h2 class="apie-mus">Kas mes tokie?</h2>
-            <img class="first-img" src="./assets/img/apie-kitchen-photo.png" alt="Virtuvės interjeras"/>
-            <div class="apie-mus-bg">
-            <p class="p-apie-mus">Esame „buturemontas.lt“ – Vilniuje įsikūrusi butų remonto įmonė, kuri užsiima visais apdailos darbais, iškvietimais meistro į namus, baldų gamyba.
-            </p>
-            </div>
-            </div>
-            <div class="second-images">
-                <img class="second-first" src="./assets/img/second-first.jpg" alt="spinta" />
-                <img class="second-second" src="./assets/img/second-second.jpg" alt="remontas" />
-                <img class="second-third" src="./assets/img/second-third.jpg" alt="meistras taiso rozete" />
-            </div>
-    </section>
-    
-    <section id="paslaugos">
-        <div class="tabs-left-side">
-        <h2>Mūsų paslaugos</h2>
-            <!-- tabs -->
-            <div class="tab">
-                <button class="tab-link" type="button" onclick="openTab('baldai')" aria-controls="baldai">Baldų gamyba</button>
-                <button class="tab-link" type="button" onclick="openTab('meistras')" aria-controls="meistras">Meistras į namus</button>
-                <button class="tab-link" type="button" onclick="openTab('apdaila')" aria-controls="apdaila">Vidaus apdaila</button>
-            </div>
+      <div class="apie-bg">
+        <h2 class="apie-mus">Kas mes tokie?</h2>
+        <img
+          class="first-img"
+          src="./assets/img/apie-kitchen-photo.png"
+          alt="Virtuvės interjeras"
+        />
+        <div class="apie-mus-bg">
+          <p class="p-apie-mus">
+            Esame „buturemontas.lt“ – Vilniuje įsikūrusi butų remonto įmonė,
+            kuri užsiima visais apdailos darbais, iškvietimais meistro į namus,
+            baldų gamyba.
+          </p>
         </div>
-            <!-- tab content -->
-           <div class="tab-content" id="baldai">
-    <div class="content-text">
-        <p>Projektuojame, gaminame, surenkame ir montuojame visus kietuosius baldus:</p>
-        <ul>
+      </div>
+      <div class="second-images">
+        <img
+          class="second-first"
+          src="./assets/img/second-first.jpg"
+          alt="spinta"
+        />
+        <img
+          class="second-second"
+          src="./assets/img/second-second.jpg"
+          alt="remontas"
+        />
+        <img
+          class="second-third"
+          src="./assets/img/second-third.jpg"
+          alt="meistras taiso rozete"
+        />
+      </div>
+    </section>
+
+    <section id="paslaugos">
+      <div class="tabs-left-side">
+        <h2>Mūsų paslaugos</h2>
+        <!-- tabs -->
+        <div class="tab">
+          <button
+            class="tab-link"
+            type="button"
+            onclick="openTab('baldai')"
+            aria-controls="baldai"
+          >
+            Baldų gamyba
+          </button>
+          <button
+            class="tab-link"
+            type="button"
+            onclick="openTab('meistras')"
+            aria-controls="meistras"
+          >
+            Meistras į namus
+          </button>
+          <button
+            class="tab-link"
+            type="button"
+            onclick="openTab('apdaila')"
+            aria-controls="apdaila"
+          >
+            Vidaus apdaila
+          </button>
+        </div>
+      </div>
+      <!-- tab content -->
+      <div class="tab-content" id="baldai">
+        <div class="content-text">
+          <p>
+            Projektuojame, gaminame, surenkame ir montuojame visus kietuosius
+            baldus:
+          </p>
+          <ul>
             <li>Virtuvės</li>
             <li>Spintas</li>
             <li>Lentynos</li>
@@ -109,188 +191,245 @@
             <li>Nestandartinius</li>
             <li>Prekybos</li>
             <li>Biuro</li>
-        </ul>
-        <p><img class="attention-mini" src="./assets/svg/⚠️.png" alt="" aria-hidden="true"> Galime padaryti nestandartinius variantus.</p>
-    </div>
-    <div class="pricelist">
-        <p>Kaina nuo</p>
-        <p class="price">200€</p>
-        <button type="submit">Užsisakyti paslaugą</button>
-    </div>
-</div>
+          </ul>
+          <p>
+            <img
+              class="attention-mini"
+              src="./assets/svg/⚠️.png"
+              alt=""
+              aria-hidden="true"
+            />
+            Galime padaryti nestandartinius variantus.
+          </p>
+        </div>
+        <div class="pricelist">
+          <!--<p>Kaina nuo</p>
+        <p class="price">200€</p>-->
+          <button type="submit">Užsisakyti paslaugą</button>
+        </div>
+      </div>
 
-<div class="tab-content" id="meistras">
-    <div class="content-text">
-        <p>Greitai ir kokybiškai padėsime jums suremontuoti arba pakeisti sulaužytą detalę, bei pakluoti grindis ir plyteles.</p>
-    </div>
-    <div class="pricelist">
-        <p>Kaina nuo</p>
-        <p class="price">200€</p>
-        <button type="submit">Užsisakyti paslaugą</button>
-    </div>
-</div>
+      <div class="tab-content" id="meistras">
+        <div class="content-text">
+          <p>Meistras gali:</p>
+          <ul>
+            <li>Surinkti / suremontuoti bet kokius baldus</li>
+            <li>Pakeisti maišytuvą, sifoną, kriauklę ir net klozetą</li>
+            <li>Pakeisti spyną, šerdį, balkono rankeną ir kt</li>
+            <li>
+              Pakeisti lizdą, kištuką, laidą, pakabinti šviestuvą ir viskas, kas
+              susiję su buitine elektronika
+            </li>
+            <li>
+              Sumontuoti / pakeisti bet kokius buitinius prietaisus - skalbimo
+              mašiną, orkaitę, viryklę, gartraukį ir kt
+            </li>
+            <li>
+              Pakabinti užuolaidas, visų rūšių lentynas, paveikslus, spinteles
+              ir kt;
+            </li>
+            <li>
+              Pakloti laminuotas grindis, sumontuoti grindjuostes, suklijuoti
+              trūkstamas plyteles ir daug kitų smulkmenų
+            </li>
+            <li>
+              Nueiti į parduotuvę ir nusipirkti reikalingą atsarginę dalį
+              (kraną, spyną, kriauklę, skalbimo mašiną kartu su IKEA virtuve,
+              dėklą, orkaitę, viryklę, sofą ir kt)
+            </li>
+          </ul>
+          <p>
+            <img
+              class="attention-mini"
+              src="./assets/svg/⚠️.png"
+              alt=""
+              aria-hidden="true"
+            />Dirbame ir savaitgaliais!
+          </p>
+        </div>
+        <div class="pricelist">
+          <!--<p>Kaina nuo</p>
+        <p class="price">200€</p>-->
 
-<div class="tab-content" id="apdaila">
-    <div class="content-text">
-        <p>Tekstas apie paslauga</p>
-        <ul>
-            <li>Deja, ši paslauga dar nėra aprašyta</li>
-            <li>Deja, ši paslauga dar nėra aprašyta</li>
-            <li>Deja, ši paslauga dar nėra aprašyta</li>
-            <li>Deja, ši paslauga dar nėra aprašyta</li>
-            <li>Deja, ši paslauga dar nėra aprašyta</li>
-        </ul>
-    </div>
-    <div class="pricelist">
-        <p>Kaina nuo</p>
-        <p class="price">200€</p>
-        <button type="submit">Užsisakyti paslaugą</button>
-    </div>
-</div>
+          <button type="submit">Užsisakyti paslaugą</button>
+        </div>
+      </div>
+
+      <div class="tab-content" id="apdaila">
+        <div class="content-text">
+          <p>Vidaus apdailos darbai:</p>
+          <ul>
+            <li>
+              Gipso kartono montavimas (sienos, lubos, pertvaros, įvairios
+              konstrukcijos)
+            </li>
+            <li>Sienų, lubų paruošimas dažymui, tapetavimui</li>
+            <li>Plytelių klijavimas</li>
+            <li>Laminato, parketlenčių montavimas</li>
+            <li>El. instaliacijų montavimas</li>
+            <li>Ventiliacijos įrengimas</li>
+            <li>Santechnikos darbai (vandentiekis, šildymas, rekuperacija);</li>
+            <li>Griovimo darbai</li>
+          </ul>
+          <p>
+            <img
+              class="attention-mini"
+              src="./assets/svg/⚠️.png"
+              alt=""
+              aria-hidden="true"
+            />Mes naudojame tik profesionalus įrankius, atvežame medžiagas, po
+            darbo išvežame šiukšles.
+          </p>
+        </div>
+        <div class="pricelist">
+          <!--<p>Kaina nuo</p>
+        <p class="price">200€</p>-->
+          <button type="submit">Užsisakyti paslaugą</button>
+        </div>
+      </div>
     </section>
     <section id="kontaktai">
-        <h2 class="kontaktai">Reikia konsultacijos?</h2>
-        <p class="p-kontaktai">Parašykite mums arba paskambinkite</p>
-        <div class="contact-links">
-            <a class="tel" href="tel:+37069485888"><i class="fas fa-phone"></i>+37069485888</a>
-            <a class="tel" href="tel:+37061088777"><i class="fas fa-phone"></i>+37061088777</a>
-            <a class="tel" href="https://facebook.com/buturemontas24.lt"><i class="fab fa-facebook-f"></i>mūsų Facebook</a>
-            <a class="tel" href="https://www.instagram.com/buturemontas.lt/"><i class="fab fa-instagram"></i>mūsų Instagram</a>
-        </div>
+      <h2 class="kontaktai">Reikia konsultacijos?</h2>
+      <p class="p-kontaktai">Parašykite mums arba paskambinkite</p>
+      <div class="contact-links">
+        <a class="tel" href="tel:+37069485888"
+          ><i class="fas fa-phone"></i>+37069485888</a
+        >
+        <a class="tel" href="tel:+37061088777"
+          ><i class="fas fa-phone"></i>+37061088777</a
+        >
+        <a class="tel" href="https://facebook.com/buturemontas24.lt"
+          ><i class="fab fa-facebook-f"></i>mūsų Facebook</a
+        >
+        <a class="tel" href="https://www.instagram.com/buturemontas.lt/"
+          ><i class="fab fa-instagram"></i>mūsų Instagram</a
+        >
+      </div>
     </section>
 
-    <button id="scroll-to-top" class="scroll-to-top"><i class="fas fa-arrow-up"></i></button>
+    <button id="scroll-to-top" class="scroll-to-top">
+      <i class="fas fa-arrow-up"></i>
+    </button>
 
-    <!-- Модальное окно -->
-<div id="orderModal" class="modal">
-    <div class="modal-content">
-      <span class="close-btn">&times;</span>
-      <h2>Malonu, kad pasirinkote mus!</h2>
-      <form class="modal-form" action="https://formspree.io/f/mjkwbodp" method="POST">
-
-        <div class="form-item">
-            <input type="text" id="name" name="name" required placeholder=" ">
+    <!-- Modal with form -->
+    <div id="orderModal" class="modal">
+      <div class="modal-content">
+        <span class="close-btn">&times;</span>
+        <h2>Malonu, kad pasirinkote mus!</h2>
+        <form
+          class="modal-form"
+          action="https://formspree.io/f/mjkwbodp"
+          method="POST"
+        >
+          <div class="form-item">
+            <input type="text" id="name" name="name" required placeholder=" " />
             <label for="name">Vardenis</label>
-        </div> 
-    
-        <div class="form-item">
-            <input type="tel" id="phone" name="phone" pattern="^\+3706\d{7}$" required placeholder=" ">
-            <label for="phone">Telefono numeris</label>
-        </div>
-            <select id="paslauga" name="paslauga" required>
-                <option value="" disabled selected hidden>Pasirinkite paslaugą</option>
-                <option value="Meistras">Meistras į namus</option>
-                <option value="Baldai">Baldų gamyba</option>
-                <option value="Apdaila">Vidaus Apdaila</option>
-            </select>
+          </div>
 
-    
-        <button type="submit" aria-label="Užsisakyti paslaugą">UŽSISAKYTI</button>
-    </form>
+          <div class="form-item">
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              pattern="^\+3706\d{7}$"
+              required
+              placeholder=" "
+            />
+            <label for="phone">Telefono numeris</label>
+          </div>
+          <select id="paslauga" name="paslauga" required>
+            <option value="" disabled selected hidden>
+              Pasirinkite paslaugą
+            </option>
+            <option value="Meistras">Meistras į namus</option>
+            <option value="Baldai">Baldų gamyba</option>
+            <option value="Apdaila">Vidaus Apdaila</option>
+          </select>
+
+          <button type="submit" aria-label="Užsisakyti paslaugą">
+            UŽSISAKYTI
+          </button>
+        </form>
+      </div>
     </div>
-  </div>
 
     <footer>
-        <p>adresas g.4-70 LT-02103, Lietuva</p>
-        <p>© UAB „buturemontas.lt“, 2025. All Rights Reserved.</p>
+      <p>Ramybės g. 4, Vilnius, Lietuva</p>
+      <p>© UAB „buturemontas.lt“, 2025. All Rights Reserved.</p>
     </footer>
 
     <script>
-    document.addEventListener('DOMContentLoaded', function() {
-    openTab('baldai'); // Open "Baldų gamyba" by default
-});
+      document.addEventListener("DOMContentLoaded", function () {
+        openTab("baldai"); // Open "Baldų gamyba" by default
+      });
 
-function openTab(tabName) {
-    var i, tabContent, tabLinks;
-    // Hide all tab content
-    tabContent = document.getElementsByClassName("tab-content");
-    for (i = 0; i < tabContent.length; i++) {
-        tabContent[i].style.display = "none";
-    }
+      function openTab(tabName) {
+        var i, tabContent, tabLinks;
+        // Hide all tab content
+        tabContent = document.getElementsByClassName("tab-content");
+        for (i = 0; i < tabContent.length; i++) {
+          tabContent[i].style.display = "none";
+        }
 
-    // Remove active class from all tabs
-    tabLinks = document.getElementsByClassName("tab-link");
-    for (i = 0; i < tabLinks.length; i++) {
-        tabLinks[i].classList.remove("active");
-    }
+        // Remove active class from all tabs
+        tabLinks = document.getElementsByClassName("tab-link");
+        for (i = 0; i < tabLinks.length; i++) {
+          tabLinks[i].classList.remove("active");
+        }
 
-    // Show the clicked tab content
-    document.getElementById(tabName).style.display = "block";
-    
-    // Add active class to the clicked tab
-    var clickedTab = document.querySelector(`button[onclick="openTab('${tabName}')"]`);
-    clickedTab.classList.add("active");
-}
+        // Show the clicked tab content
+        document.getElementById(tabName).style.display = "block";
+
+        // Add active class to the clicked tab
+        var clickedTab = document.querySelector(
+          `button[onclick="openTab('${tabName}')"]`
+        );
+        clickedTab.classList.add("active");
+      }
     </script>
     <script>
-        const scrollToTopButton = document.getElementById("scroll-to-top");
+      const scrollToTopButton = document.getElementById("scroll-to-top");
 
-// Показываем кнопку, когда страница прокручена вниз
-window.onscroll = function () {
-    if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
-        scrollToTopButton.style.display = "block"; // Показываем кнопку
-    } else {
-        scrollToTopButton.style.display = "none"; // Скрываем кнопку
-    }
-};
+      window.onscroll = function () {
+        if (
+          document.body.scrollTop > 200 ||
+          document.documentElement.scrollTop > 200
+        ) {
+          scrollToTopButton.style.display = "block";
+        } else {
+          scrollToTopButton.style.display = "none";
+        }
+      };
 
-// Добавляем плавную прокрутку к верхней части страницы
-scrollToTopButton.addEventListener("click", function () {
-    window.scrollTo({
-        top: 0,
-        behavior: "smooth"
-    });
-});
-        </script>
-        <script>
-            const form = document.getElementById('contact-form');
-            const responseMessage = document.getElementById('response-message');
-        
-            form.addEventListener('submit', function(event) {
-                event.preventDefault(); // Prevent form from submitting the normal way
-        
-                // Use Fetch API to send the form data
-                const formData = new FormData(form);
-        
-                fetch(form.action, {
-                    method: form.method,
-                    body: formData,
-                })
-                .then(response => response.json())
-                .then(data => {
-                    responseMessage.textContent = "Dėkojame už paraišką! Susisieksime su jumis kuo greičiau.";
-                })
-                .catch(error => {
-                    responseMessage.textContent = "Įvyko klaida. Prašome pabandyti vėliau.";
-                });
-            });
-        </script>
-        <script>
-            // Получаем элементы
-var modal = document.getElementById("orderModal");
-var closeModalBtn = document.getElementsByClassName("close-btn")[0];
-var orderButtons = document.querySelectorAll(".pricelist button"); // Все кнопки "Užsisakyti paslaugą"
+      scrollToTopButton.addEventListener("click", function () {
+        window.scrollTo({
+          top: 0,
+          behavior: "smooth",
+        });
+      });
+    </script>
+    <script>
+      const form = document.getElementById("contact-form");
+      const responseMessage = document.getElementById("response-message");
 
-// Открытие модального окна при нажатии на кнопку
-orderButtons.forEach(function(button) {
-  button.onclick = function() {
-    modal.classList.add("show"); // Добавляем класс, чтобы показать модальное окно
-  };
-});
+      form.addEventListener("submit", function (event) {
+        event.preventDefault();
 
-// Закрытие модального окна при нажатии на крестик
-closeModalBtn.onclick = function() {
-  modal.classList.remove("show"); // Убираем класс, чтобы скрыть модальное окно
-}
+        const formData = new FormData(form);
 
-// Закрытие модального окна, если пользователь кликает вне области модального окна
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.classList.remove("show");
-  }
-}
-        </script>
-
-    <!--created by vkachovic(etzhmk)-->
-</body>
+        fetch(form.action, {
+          method: form.method,
+          body: formData,
+        })
+          .then((response) => response.json())
+          .then((data) => {
+            responseMessage.innerHTML = `<p class="success-message">Ačiū už užklausą! Mes susisieksime su jumis.</p>`;
+            form.reset();
+          })
+          .catch((error) => {
+            responseMessage.innerHTML = `<p class="error-message">Klaida. Bandykite vėl vėliau.</p>`;
+          });
+      });
+    </script>
+  </body>
 </html>
