@@ -72,86 +72,89 @@
     </section>
     
     <section id="paslaugos">
+        <div class="tabs-left-side">
         <h2>Mūsų paslaugos</h2>
-        <div class="tab-wrapper">
             <!-- tabs -->
             <div class="tab">
                 <button class="tab-link" type="button" onclick="openTab('baldai')" aria-controls="baldai">Baldų gamyba</button>
                 <button class="tab-link" type="button" onclick="openTab('meistras')" aria-controls="meistras">Meistras į namus</button>
                 <button class="tab-link" type="button" onclick="openTab('apdaila')" aria-controls="apdaila">Vidaus apdaila</button>
             </div>
-            <!-- tab content -->
-            <div id="baldai" class="tab-content">
-                <div class="content-text">
-                    <p>Projektuojame, gaminame, surenkame ir montuojame visus kietuosius baldus:</p>
-                    <ul>
-                        <li>Virtuvės</li>
-                        <li>Spintas</li>
-                        <li>Lentynos</li>
-                        <li>Rūbinės</li>
-                        <li>Voniai</li>
-                        <li>Prieškambariui</li>
-                        <li>Vaikų kambariui</li>
-                        <li>Nestandartinius</li>
-                        <li>Prekybos</li>
-                        <li>Biuro</li>
-                    </ul>
-                    <p><img class="attention-mini" src="./assets/svg/⚠️.png" alt="" aria-hidden="true"> Galime padaryti nestandartinius variantus.</p>
-                </div>
-                <div class="pricelist">
-                    <p>Kaina nuo</p>
-                    <p class="price">200€</p>
-                    <button type="submit">Užsisakyti paslaugą</button>
-                </div>
-            </div>
-            
-            <div id="meistras" class="tab-content">
-                <div class="content-text">
-                    <p>Greitai ir kokybiškai padėsime jums suremontuoti arba pakeisti sulaužytą detalę, bei pakluoti grindis ir plyteles.</p>
-                </div>
-                <div class="pricelist">
-                    <p>Kaina nuo</p>
-                    <p class="price">200€</p>
-                    <button type="submit">Užsisakyti paslaugą</button>
-                </div>
-            </div>
-    
-            <div id="apdaila" class="tab-content">
-                <div class="content-text">
-                    <p>Tekstas apie paslauga</p>
-                    <ul>
-                        <li>Deja, ši paslauga dar nėra aprašyta</li>
-                        <li>Deja, ši paslauga dar nėra aprašyta</li>
-                        <li>Deja, ši paslauga dar nėra aprašyta</li>
-                        <li>Deja, ši paslauga dar nėra aprašyta</li>
-                        <li>Deja, ši paslauga dar nėra aprašyta</li>
-                    </ul>
-                </div>
-                <div class="pricelist">
-                    <p>Kaina nuo</p>
-                    <p class="price">200€</p>
-                    <button type="submit">Užsisakyti paslaugą</button>
-                </div>
-            </div>
         </div>
+            <!-- tab content -->
+           <div class="tab-content" id="baldai">
+    <div class="content-text">
+        <p>Projektuojame, gaminame, surenkame ir montuojame visus kietuosius baldus:</p>
+        <ul>
+            <li>Virtuvės</li>
+            <li>Spintas</li>
+            <li>Lentynos</li>
+            <li>Rūbinės</li>
+            <li>Voniai</li>
+            <li>Prieškambariui</li>
+            <li>Vaikų kambariui</li>
+            <li>Nestandartinius</li>
+            <li>Prekybos</li>
+            <li>Biuro</li>
+        </ul>
+        <p><img class="attention-mini" src="./assets/svg/⚠️.png" alt="" aria-hidden="true"> Galime padaryti nestandartinius variantus.</p>
+    </div>
+    <div class="pricelist">
+        <p>Kaina nuo</p>
+        <p class="price">200€</p>
+        <button type="submit">Užsisakyti paslaugą</button>
+    </div>
+</div>
+
+<div class="tab-content" id="meistras">
+    <div class="content-text">
+        <p>Greitai ir kokybiškai padėsime jums suremontuoti arba pakeisti sulaužytą detalę, bei pakluoti grindis ir plyteles.</p>
+    </div>
+    <div class="pricelist">
+        <p>Kaina nuo</p>
+        <p class="price">200€</p>
+        <button type="submit">Užsisakyti paslaugą</button>
+    </div>
+</div>
+
+<div class="tab-content" id="apdaila">
+    <div class="content-text">
+        <p>Tekstas apie paslauga</p>
+        <ul>
+            <li>Deja, ši paslauga dar nėra aprašyta</li>
+            <li>Deja, ši paslauga dar nėra aprašyta</li>
+            <li>Deja, ši paslauga dar nėra aprašyta</li>
+            <li>Deja, ši paslauga dar nėra aprašyta</li>
+            <li>Deja, ši paslauga dar nėra aprašyta</li>
+        </ul>
+    </div>
+    <div class="pricelist">
+        <p>Kaina nuo</p>
+        <p class="price">200€</p>
+        <button type="submit">Užsisakyti paslaugą</button>
+    </div>
+</div>
     </section>
     <section id="kontaktai">
         <h2 class="kontaktai">Reikia konsultacijos?</h2>
         <p class="p-kontaktai">Parašykite mums arba paskambinkite</p>
-        <a class="tel" href="tel:+37069485888"><i class="fas fa-phone-alt"></i>+37069485888</a>
-        <a class="tel" href="tel:+37061088777"><i class="fas fa-phone-alt"></i>+37061088777</a>
-        <a class="tel" href="https://facebook.com/buturemontas24.lt"><i class="fab fa-facebook"></i>mūsų Facebook</a>
-        <a class="tel" href="https://www.instagram.com/buturemontas.lt/"><i class="fab fa-instagram"></i>mūsų Instagram</a>
+        <div class="contact-links">
+            <a class="tel" href="tel:+37069485888"><i class="fas fa-phone"></i>+37069485888</a>
+            <a class="tel" href="tel:+37061088777"><i class="fas fa-phone"></i>+37061088777</a>
+            <a class="tel" href="https://facebook.com/buturemontas24.lt"><i class="fab fa-facebook-f"></i>mūsų Facebook</a>
+            <a class="tel" href="https://www.instagram.com/buturemontas.lt/"><i class="fab fa-instagram"></i>mūsų Instagram</a>
+        </div>
     </section>
 
-    <button id="scroll-to-top" class="scroll-to-top">↑</button>
+    <button id="scroll-to-top" class="scroll-to-top"><i class="fas fa-arrow-up"></i></button>
 
     <footer>
         <p>adresas g.4-70 LT-02103, Lietuva</p>
         <p>© UAB „buturemontas.lt“, 2025. All Rights Reserved.</p>
     </footer>
 
-    <script>document.addEventListener('DOMContentLoaded', function() {
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
     openTab('baldai'); // Open "Baldų gamyba" by default
 });
 

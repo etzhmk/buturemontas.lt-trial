@@ -5,6 +5,8 @@
     --grey: #9c9c9c;
     --font-family: 'Jura', serif; 
     --font-base: 'PT Sans', serif;
+    --btnbg: radial-gradient(circle, #00008B, #1a5fb4);
+    --btnbghover: radial-gradient(circle, #1a5fb4, #00008B);
 }
 
 * {
@@ -25,32 +27,24 @@ body {
 
 button {
     font-family: var(--font-family);
-    font-size: 18px;
+    font-size: 20px;
     font-weight: bold;
     height: 40px;
-    color: var(--white);
-    background-color: var(--blue);
     border-radius: 5px;
     text-transform: uppercase;
     cursor: pointer;
-
 }
 
-/* Debug styles */
+/* Debug styles */ 
 div {
-    border: 2px solid 2cqb;
+    border: 2px solid 1aqua;
 }
 
 section, footer, nav {
-    border: 2px solid 2red;
+    border: 5px solid 1magenta;
     margin: 10px 0;
     background-clip: content-box;
-    background-color: 3darkgoldenrod;
-}
-
-.hero-form {
-    border: 2px solid 2red;
-    background-clip: content-box;
+    background-color: 1darkgoldenrod;
 }
 /* End debug */
 
@@ -194,23 +188,32 @@ h1 {
 
 .hero-form button {
     height: 52px;
-    background: var(--blue);
+    background: var(--btnbg);
     color: var(--white);
     font-weight: bold;
-    font-size: 16px;
+    font-size: 20px;
     padding: 0.75rem;
     border: none;
     border-radius: 5px;
+
+    transition: background 1s ease-out;
 }
 
+.hero-form button:hover {
+    background: var(--btnbghover);
+}
+
+
 #apie-mus {
-    padding: 50px 0 100px;
+    padding: 50px 0 200px;
     display: flex;
     height: auto;
     width: auto;
 }
 
 h2 {
+    padding: 0;
+    margin: 0;
     width: 410px;
     font-size: 40px;
     font-weight: bold;
@@ -244,6 +247,7 @@ h2 {
     margin-top: -85px;
     position: relative;
     box-shadow: var(--blue) 4px 6px;
+    font-size: 20px;
 }
 
 .first-img {
@@ -282,142 +286,203 @@ h2 {
     z-index: 7;
 }
 
+#paslaugos {
+    width: auto;
+    height: 800px;
+    background-color: var(--white);
+    color: var(--white);
+    display: flex;
+}
+
 #paslaugos h2 {
     margin: 0;
     padding: 0;
-    color: var(--black);
-    margin-left: 145px;
+    margin: 100px 0 110px 145px;
 }
 
-#paslaugos {
-    padding: 100px 0;
-    display: flex;
-    flex-direction: column;
-}
-
-.tab-wrapper {
-    width: 1020px;
-    height: auto;
+.tabs-left-side {
+    margin: 0;
     padding: 0;
-    margin: 0 auto;
+    max-width: auto;
+    width: 590px;
+    height: 100%;
+    background: var(--blue);
+    border-radius: 5px 0 0 5px;
 }
 
 .tab {
-    margin: 100px auto 0;
+    margin: 0 100px 0 0;
+    width: 590px;
+    height: auto;
     display: flex;
-    justify-content: space-between;
-    overflow: hidden;
+    flex-direction: column;
+    gap: 16px;
 }
 
 .tab-link {
-    width: 340px;
+    width: 100%;
     height: 60px;
-    text-align: center;
-    background-color: var(--grey); 
-    border-top: 2px solid var(--black);
-    cursor: pointer;
-    font-size: 20px;
-    font-weight: bold;
+}
+
+.tab button {
+    color: var(--white);
+    background: var(--btnbghover);
+    border: none;
+    border-radius: 0px;
+    text-align: left;
+    padding-left: 145px;
+
+    transition: background 0.3s ease-out;
+}
+
+.tab button.active {
+    background: var(--white);
     color: var(--black);
-}
+    padding-left: 170px;
 
-.tab-link:first-child {
-    border-radius: 5px 0 0 0; 
-    border-right: 1px solid var(--black);
-}
-
-.tab-link:nth-child(2) {
-    border-radius: 0 0 0 0;
-}
-
-.tab-link:last-child {
-    border-radius: 0 5px 0 0; 
-    border-left: 1px solid var(--black);
-}
-
-/* Стили для активной кнопки */
-.tab-link.active {
-    background-color: var(--white);
-    color: var(--black);
-}
-
-.tab-content {
-    height: 560px;
-    padding: 80px 0 0 85px;
-    border-right: 2px solid var(--black);
-    border-bottom: 2px solid var(--black);
-    border-left: 2px solid var(--black);
-    border-radius: 0 0 5px 5px;
 }
 
 .content-text {
-    width: 520px;
-    border: 5px solid magenta;
-    
+    width: 100%;
+    background-color: var(--white);
+    color: var(--black);
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    padding: 110px 0 0 100px;
 }
 
-.content-text > p {
-    font-family: var(--font-base);
-    font-size: 20px;
-
-    display: flex;
-    align-items: center;
+.content-text ul {
+    padding: 20px 40px 50px;
 }
 
 .content-text li {
     font-family: var(--font-base);
-    font-size: 20px;
-    padding: 2px;
 }
 
-.content-text ul {
-    padding: 40px 20px;
+.content-text p {
+    width: 600px;
+    display: flex;
 }
 
 .pricelist {
-    width: 264px;
+    border: 2px solid red;
+    color: var(--black);
+    margin-top: 60px;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 26px;
     align-items: center;
-    border: 5px solid green;
 }
 
 .pricelist button {
-    width: 264px;
-    height: 40px;
+    height: 52px;
+    background: var(--btnbg);
+    color: var(--white);
+    font-weight: bold;
+    font-size: 20px;
+    padding: 0 50px;
     border: none;
+    border-radius: 5px;
+
+    transition: background 1s ease-out;
 }
 
-.price {
-    font-size: 50px;
+.pricelist button:hover {
+    background: var(--btnbghover);
+}
+
+#kontaktai {
+    width: auto;
+    height: 600px;
+    margin: 100px 0 0 0;
+    color: var(--white);
+    padding: 150px 145px 0;
+    background: var(--blue);
+}  
+
+#kontaktai h2 {
+    width: auto;
+    margin: 0;
+}
+#kontaktai p {
+    font-size: 30px;
+    font-family: var(--font-family);
     font-weight: bold;
+    margin: 0;
+    margin: 40px 0 60px;
+}
+
+.tel {
+    width: 350px;
+    height: 46px;
+
+    border-radius: 5px;
     font-family: var(--font-base);
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--white);
+
+    transition: background 0.3s ease-in-out, box-shadow 0.3s ease;
+}
+
+.tel:hover {
+    text-decoration: none;
+    background: var(--btnbghover);
+    color: var(--white);
+    box-shadow: 0px 0 200px var(--white);
+}
+
+.tel i {
+    margin: 0 30px 0 0;
+}
+
+.contact-links {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px 110px; /* вертикальный и горизонтальный отступ */
+    justify-content: space-between;
+    margin-top: 60px;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    background: var(--blue);
+    margin: 0;
+    color: var(--white);
+    padding: 0 145px 20px;
+}
+
+footer p {
+    font-family: var(--font-family);
 }
 
 /*--SCROLL BUTTON--*/
 
 .scroll-to-top {
     position: fixed;
-    bottom: 70px; /* Расстояние от низа */
-    right: 60px;  /* Расстояние от правого края */
-    background-color: var(--blue); /* Цвет фона */
-    color: white; /* Цвет текста */
-    border: none;
-    border-radius: 50%; /* Круглая форма */
+    bottom: 70px; 
+    right: 60px;  
+    background: var(--btnbghover); 
+    color: white;
+    border: 5px solid var(--white);
+    border-radius: 50%; 
     width: 70px;
     height: 70px;
-    font-size: 30px; /* Размер стрелочки */
+    font-size: 20px;
     text-align: center;
-    display: none; /* Скрыта по умолчанию */
+    display: none; 
     cursor: pointer;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Тень для кнопки */
     z-index: 100;
 }
 
 .scroll-to-top:hover {
-    background-color: #333; /* Цвет при наведении */
+    background: var(--white); 
+    border: 5px solid var(--blue);
+    color: var(--blue);
 }
 
 /*--RESPONSIBLE--*/
@@ -475,7 +540,7 @@ h2 {
     }
 
     p {
-        font-size: 22px;
+        font-size: 20px;
     }
     
     .hero-house {
@@ -548,9 +613,45 @@ h2 {
     .second-images {
         display: none;
     }
+    
+    #paslaugos h2, #kontaktai h2 {
+        color: var(--white);
+    }
+
+    #paslaugos {
+        margin: 0 auto;
+    }
+
+    #kontaktai{
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    footer p {
+        font-size: 16px;
+    }
 
   }
 
+
+  @media screen and (max-width: 1100px){
+    .contact-links {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        max-width: 350px;
+        margin: 0 auto;
+    }
+
+    footer  {
+        font-size: 16px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer p {
+        padding: 0 0 10px;
+    }
+  }
 
 @media screen and (max-width: 900px) {
 
@@ -566,8 +667,16 @@ h2 {
         font-size: 40px;
     }
 
+    h2 {
+        font-size: 30px;
+    }
+
     p {
         font-size: 18px;
+    }
+
+    #kontaktai p {
+        font-size: 25px;
     }
 
     .ul-nav {
@@ -619,4 +728,21 @@ h2 {
     .apie-mus-bg {
         width: 50%;
     }
+
+    .scroll-to-top {
+        position: fixed;
+        bottom: 70px; /* Расстояние от низа */
+        right: 10px; 
+    }
+
+    #kontaktai{
+        padding: 0;
+    }
+
+    footer {
+        padding: 0 10px;
+        text-align: center;
+    }
+
+
 }
