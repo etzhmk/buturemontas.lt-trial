@@ -1,12 +1,19 @@
 # Trial Landing Page for Buturemontas.lt
-This project is a trial task where I recreated a landing page for Buturemontas, a renovation company based in Vilnius that specializes in interior finishing, home repair services, and custom furniture manufacturing. Using HTML and CSS, I carefully followed the provided design to ensure visual consistency and a smooth user experience.
 
-Key Skills:
+This is a trial task where I recreated a landing page for **Buturemontas.lt**, a renovation company based in Vilnius. The company specializes in interior finishing, home repair services, and custom furniture manufacturing.
 
-    HTML & CSS
+## Technologies Used
 
-    Layout design
+- **HTML**
+- **CSS**
+- **JS** (with help)
 
-    Visual consistency
+## Features
 
-    Attention to detail
+- Fully responsive design
+- Clean, modern layout
+- Focus on usability and visual consistency
+
+## Demo
+
+You can view the live demo of this landing page here: [https://etzhmk.github.io/buturemontas.lt-trial]
