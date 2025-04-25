@@ -16,4 +16,4 @@ This is a trial task where I recreated a landing page for **Buturemontas.lt**, a
 
 ## Demo
 
-You can view the live demo of this landing page here: [https://etzhmk.github.io/buturemontas.lt-trial]
+You can view the live demo of this landing page [here] (https://etzhmk.github.io/buturemontas.lt-trial)
